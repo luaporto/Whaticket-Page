@@ -1,4 +1,4 @@
-import { Box, Container, Button, Stack, CssBaseline } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import "../App.css";
 import icon from "../assets/icon.png";
 
@@ -32,17 +32,16 @@ const TopBar = () => {
           alignItems="center"
         >
           <Stack direction="row">
-            <Box
-              sx={{
-                width: "100px",
-                height: "100px",
-              }}
+            <Typography
+              sx={{ fontSize: "36px", fontFamily: "Mada", fontWeight: "400" }}
             >
-              <img src={icon} alt="" />
-            </Box>
-            <span sx={{ fontFamily: "Nunito", fontWeight: 700 }}>
-              Wha<strong>ticket</strong>
-            </span>
+              Wha
+            </Typography>
+            <Typography
+              sx={{ fontSize: "36px", fontFamily: "Mada", fontWeight: "700" }}
+            >
+              ticket
+            </Typography>
           </Stack>
           <Stack direction="row" spacing={2}>
             <Button color="secondary">Entrar</Button>

@@ -5,29 +5,25 @@ import Box from '@mui/material/Box';
 import image1 from './assets/image1.png';
 
 import Grid from '@mui/material/Grid';
-import { Button, Typography } from '@mui/material';
+import { Button, Stack, Typography } from '@mui/material';
 
 const Page = () => {
   return (
-    <Box>
-      <Grid container spacing={2}>
-        <Grid item xs={6}>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '78px',
-              width: '666px',
-              height: '495px',
-              // left: '78px',
-              // top: '199px',
+    <Grid container spacing={2}>
+      <Grid item xs={6}>
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            paddingRight: '78px',
+            width: '666px',
+            height: '495px',
 
-              letterSpacing: '0.025em',
-              color: '#302F2F',
-            }}
-          >
+            letterSpacing: '0.025em',
+            color: '#302F2F',
+          }}
+        >
+          <Stack direction="column" spacing={2}>
             <Typography
               fontFamily="Nunito, sans-serif"
               variant="h2"
@@ -39,6 +35,7 @@ const Page = () => {
             >
               Todos os seus atendentes no mesmo número de Whatsapp.
             </Typography>
+
             <Typography
               fontFamily="Nunito, sans-serif"
               variant="body1"
@@ -52,32 +49,34 @@ const Page = () => {
               todos os atendimentos em um único lugar e tenha visão clara de
               toda a comunicação com os seus clientes.
             </Typography>
-            <Button variant="contained" color="primary">
+            <Button
+              sx={{
+                width: '175px',
+                fontSize: '20px',
+                fontWeight: 'bold',
+                fontFamily: 'Nunito, sans-serif',
+              }}
+              variant="contained"
+              color="primary"
+            >
               Contrate agora
             </Button>
-          </Box>
-        </Grid>
-
-        <Grid item xs={6}>
-          <Box
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              // padding: '78px',
-
-              // position: 'absolute',
-              // width: '859px',
-              // height: '632px',
-              // left: '643px',
-              // top: '108px',
-            }}
-          >
-            <img src={image1} alt="" />
-          </Box>
-        </Grid>
+          </Stack>
+        </Box>
       </Grid>
-    </Box>
+
+      <Grid item xs={6}>
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <img src={image1} alt="" />
+        </Box>
+      </Grid>
+    </Grid>
   );
 };
 

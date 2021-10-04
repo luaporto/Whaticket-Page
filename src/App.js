@@ -46,34 +46,32 @@ function App() {
     <>
       <CssBaseline />
 
-      <ThemeProvider theme={scroll}>
-        <ThemeProvider theme={theme}>
-          <Container sx={{ backgroundColor: "#ffffff" }}>
-            <TopBar />
-            <Page />
-            <Box style={{ height: 10 }}></Box>
-            <Box>
-              {" "}
-              <Typography
-                sx={{
-                  width: "448px",
-                  height: "49px",
+      <ThemeProvider theme={theme}>
+        <Container sx={{ backgroundColor: "#ffffff" }}>
+          <TopBar />
+          <Page />
+          <Box style={{ height: 10 }}></Box>
+          <Box>
+            {" "}
+            <Typography
+              sx={{
+                width: "448px",
+                height: "49px",
 
-                  fontFamily: "Nunito",
-                  fontStyle: "normal",
-                  fontWeight: 800,
-                  fontSize: "36px",
-                  lineHeight: "49px",
-                  letterSpacing: "0.025em",
-                  color: "#302F2F",
-                }}
-              >
-                q terror
-              </Typography>{" "}
-            </Box>
-            <Box style={{ height: 10000 }}></Box>
-          </Container>
-        </ThemeProvider>
+                fontFamily: "Nunito",
+                fontStyle: "normal",
+                fontWeight: 800,
+                fontSize: "36px",
+                lineHeight: "49px",
+                letterSpacing: "0.025em",
+                color: "#302F2F",
+              }}
+            >
+              q terror
+            </Typography>{" "}
+          </Box>
+          <Box style={{ height: 10000 }}></Box>
+        </Container>
       </ThemeProvider>
     </>
   );
