@@ -1,5 +1,5 @@
-import { Box, Container, Button, Stack, CssBaseline } from "@mui/material";
-import "../App.css";
+import { Box, Container, Button, Stack, CssBaseline } from '@mui/material';
+import '../App.css';
 
 const TopBar = () => {
   return (
@@ -8,12 +8,12 @@ const TopBar = () => {
       <Container>
         <Box
           sx={{
-            fontStyle: "normal",
-            fontSize: "20px",
-            letterSpacing: "0.025em",
-            position: "sticky",
-            top: "10px",
-            width: "100%",
+            fontStyle: 'normal',
+            fontSize: '20px',
+            letterSpacing: '0.025em',
+            position: 'sticky',
+            top: '10px',
+            width: '100%',
           }}
         >
           <Stack
@@ -21,7 +21,7 @@ const TopBar = () => {
             justifyContent="space-between"
             alignItems="center"
           >
-            <span sx={{ fontFamily: "Nunito" }}>
+            <span sx={{ fontFamily: 'Nunito' }}>
               Wha<strong>ticket</strong>
             </span>
             <Stack direction="row" spacing={2}>
@@ -32,7 +32,6 @@ const TopBar = () => {
             </Stack>
           </Stack>
         </Box>
-        <div style={{ height: 2000 }}></div>
       </Container>
     </>
   );
