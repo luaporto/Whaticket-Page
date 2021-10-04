@@ -1,13 +1,18 @@
 // import logo from './logo.svg';
-import { Box, Container, Button, Stack, CssBaseline } from "@mui/material";
+import {
+  Box,
+  Container,
+  Button,
+  Stack,
+  CssBaseline,
+  Typography,
+} from "@mui/material";
 import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TopBar from "./Components/TopBar";
+import darkScrollbar from "@mui/material/darkScrollbar";
 
 const theme = createTheme({
-  status: {
-    danger: "#e53e3e",
-  },
   palette: {
     primary: {
       main: "#00ACC1",
@@ -21,11 +26,53 @@ const theme = createTheme({
   },
 });
 
+const scroll = createTheme({
+  "@global": {
+    "*::-webkit-scrollbar": {
+      width: "0.4em",
+    },
+    "*::-webkit-scrollbar-track": {
+      "-webkit-box-shadow": "inset 0 0 6px rgba(0,0,0,0.00)",
+    },
+    "*::-webkit-scrollbar-thumb": {
+      backgroundColor: "rgba(0,0,0,.1)",
+      outline: "1px solid slategrey",
+    },
+  },
+});
+
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <TopBar />
+      <CssBaseline />
+
+      <ThemeProvider theme={scroll}>
+        <ThemeProvider theme={theme}>
+          <Container sx={{ backgroundColor: "#ffffff" }}>
+            <TopBar />
+            <Box style={{ height: 10 }}></Box>
+            <Box>
+              {" "}
+              <Typography
+                sx={{
+                  width: "448px",
+                  height: "49px",
+
+                  fontFamily: "Nunito",
+                  fontStyle: "normal",
+                  fontWeight: 800,
+                  fontSize: "36px",
+                  lineHeight: "49px",
+                  letterSpacing: "0.025em",
+                  color: "#302F2F",
+                }}
+              >
+                q terror
+              </Typography>{" "}
+            </Box>
+            <Box style={{ height: 10000 }}></Box>
+          </Container>
+        </ThemeProvider>
       </ThemeProvider>
     </>
   );
