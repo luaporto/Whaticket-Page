@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import {
   Box,
   Container,
@@ -8,8 +7,9 @@ import {
   Typography,
 } from "@mui/material";
 import "./App.css";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material";
 import TopBar from "./Components/TopBar";
+import Page from "./Page";
 import darkScrollbar from "@mui/material/darkScrollbar";
 
 const theme = createTheme({
@@ -50,6 +50,7 @@ function App() {
         <ThemeProvider theme={theme}>
           <Container sx={{ backgroundColor: "#ffffff" }}>
             <TopBar />
+            <Page />
             <Box style={{ height: 10 }}></Box>
             <Box>
               {" "}
