@@ -1,6 +1,12 @@
-import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import {
+  Container,
+  createTheme,
+  CssBaseline,
+  ThemeProvider,
+} from '@mui/material';
 import Page from './Page';
 import TopBar from './Components/TopBar';
+// import styled from '@emotion/styled/types/base';
 
 const theme = createTheme({
   palette: {
@@ -21,8 +27,10 @@ function App() {
     <div>
       <CssBaseline />
       <ThemeProvider theme={theme}>
-        <TopBar />
-        <Page />
+        <Container>
+          <TopBar />
+          <Page />
+        </Container>
       </ThemeProvider>
     </div>
   );

@@ -1,38 +1,46 @@
-import { Box, Container, Button, Stack, CssBaseline } from '@mui/material';
+import { Box, Button, Stack, CssBaseline, Typography } from '@mui/material';
 import '../App.css';
 
 const TopBar = () => {
   return (
     <>
       <CssBaseline />
-      <Container>
-        <Box
-          sx={{
-            fontStyle: 'normal',
-            fontSize: '20px',
-            letterSpacing: '0.025em',
-            position: 'sticky',
-            top: '10px',
-            width: '100%',
-          }}
+
+      <Box
+        sx={{
+          fontStyle: 'normal',
+
+          letterSpacing: '0.025em',
+          position: 'sticky',
+          top: '10px',
+          width: '100%',
+        }}
+      >
+        <Stack
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
         >
-          <Stack
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-          >
-            <span sx={{ fontFamily: 'Nunito' }}>
-              Wha<strong>ticket</strong>
-            </span>
-            <Stack direction="row" spacing={2}>
-              <Button color="secondary">Entrar</Button>
-              <Button variant="contained" color="primary">
-                Contrate agora
-              </Button>
-            </Stack>
+          <Stack direction="row">
+            <Typography
+              sx={{ fontSize: '36px', fontFamily: 'Mada', fontWeight: '400' }}
+            >
+              Wha
+            </Typography>
+            <Typography
+              sx={{ fontSize: '36px', fontFamily: 'Mada', fontWeight: '700' }}
+            >
+              ticket
+            </Typography>
           </Stack>
-        </Box>
-      </Container>
+          <Stack direction="row" spacing={2}>
+            <Button color="secondary">Entrar</Button>
+            <Button variant="contained" color="primary">
+              Contrate agora
+            </Button>
+          </Stack>
+        </Stack>
+      </Box>
     </>
   );
 };
