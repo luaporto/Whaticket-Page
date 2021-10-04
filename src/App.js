@@ -1,13 +1,27 @@
-// import logo from './logo.svg';
-import './App.css';
+import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import Page from './Page';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#00ACC1',
+      contrastText: '#FFFFFF',
+      darker: '#053e85',
+    },
+    secondary: {
+      main: '#121212',
+      darker: '#053e85',
+    },
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>Whaticket</p>
-      </header>
+    <div>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <Page />
+      </ThemeProvider>
     </div>
   );
 }
