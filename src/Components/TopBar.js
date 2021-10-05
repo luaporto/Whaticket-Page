@@ -15,7 +15,7 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
           top: 0,
           backgroundColor: "#fff",
           height: "75px",
-          margin: "15px -100px 0 -100px",
+          margin: "15px -100px 10px -100px",
         }}
       >
         <Stack
@@ -30,8 +30,9 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
           <Stack direction="row">
             <img
               style={{
-                width: 50,
-                height: 50,
+                width: 75,
+                height: 75,
+                marginTop: "-15px",
               }}
               src={icon}
               alt=""
