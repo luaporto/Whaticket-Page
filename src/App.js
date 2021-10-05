@@ -92,10 +92,6 @@ function App() {
             SubtitleTypography={SubtitleTypography}
             TextTypography={TextTypography}
           />
-          <Box>
-            {" "}
-            <SubtitleTypography>q terror</SubtitleTypography>{" "}
-          </Box>
           <Box style={{ height: 10000 }}></Box>
         </Container>
       </ThemeProvider>
