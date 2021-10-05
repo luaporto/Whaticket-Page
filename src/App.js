@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Button,
-  Stack,
-  CssBaseline,
-  Typography,
-} from '@mui/material';
+import { Box, Container, Button, CssBaseline, Typography } from '@mui/material';
 import './App.css';
 import { createTheme, ThemeProvider } from '@mui/material';
 import TopBar from './Components/TopBar';
@@ -77,10 +70,6 @@ function App() {
             SubtitleTypography={SubtitleTypography}
             TextTypography={TextTypography}
           />
-          <Box>
-            {' '}
-            <SubtitleTypography>q terror</SubtitleTypography>{' '}
-          </Box>
           <Box style={{ height: 10000 }}></Box>
         </Container>
       </ThemeProvider>

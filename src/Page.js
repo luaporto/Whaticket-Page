@@ -1,10 +1,10 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
+import * as React from "react";
+import Box from "@mui/material/Box";
 
-import image1 from './assets/image1.png';
+import image1 from "./assets/image1.png";
 
-import Grid from '@mui/material/Grid';
-import { Stack, Typography } from '@mui/material';
+import Grid from "@mui/material/Grid";
+import { Stack, Typography } from "@mui/material";
 
 const Page = ({
   ContainedButton,
@@ -17,14 +17,14 @@ const Page = ({
       <Grid item xs={6}>
         <Box
           sx={{
-            display: 'flex',
-            alignItems: 'center',
-            paddingRight: '78px',
-            width: '666px',
-            height: '495px',
+            display: "flex",
+            alignItems: "center",
+            paddingRight: "78px",
+            width: "666px",
+            height: "495px",
 
-            letterSpacing: '0.025em',
-            color: '#302F2F',
+            letterSpacing: "0.025em",
+            color: "#302F2F",
           }}
         >
           <Stack direction="column" spacing={2}>
@@ -46,9 +46,9 @@ const Page = ({
       <Grid item xs={6}>
         <Box
           sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <img src={image1} alt="" />
@@ -58,69 +58,52 @@ const Page = ({
         <Grid item xs={6}>
           <Box
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              paddingRight: '78px',
-              width: '666px',
-              height: '495px',
+              display: "flex",
+              paddingRight: "78px",
+              width: "666px",
+              height: "495px",
 
-              letterSpacing: '0.025em',
-              color: '#302F2F',
+              letterSpacing: "0.025em",
+              color: "#302F2F",
             }}
           >
             <Stack direction="column" spacing={2}>
-              <Typography
-                fontFamily="Nunito, sans-serif"
-                variant="h2"
-                gutterBottom
-                component="div"
-                fontSize="48px"
-                fontWeight="800"
-                lineHeight="65px"
-              >
-                Tudo em um único lugar
-              </Typography>
+              <SubtitleTypography>Tudo em um único lugar</SubtitleTypography>
 
-              <Typography
-                fontFamily="Nunito, sans-serif"
-                variant="body1"
-                gutterBottom
-                component="div"
-                fontSize="20px"
-                fontWeight="400"
-                lineHeight="27,28px"
-              >
+              <TextTypography>
                 Tenha todos os departamentos da sua empresa organizados em um
                 único painel. Não perca nenhum atendimento por falta de
                 organização e separe os atendimentos automaticamente com a ajuda
                 do nosso Chatbot.
-              </Typography>
+              </TextTypography>
             </Stack>
           </Box>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item>
           <Box
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
+              display: "flex",
+              alignItems: "center",
+              paddingRight: "78px",
+              width: "484px",
+              height: "165px",
+
+              backgroundColor: "#FFE7797D",
+
+              borderRadius: "82px 0px 0px 0px",
             }}
-          >
-            <Box
-              sx={{
-                // position: 'absolute',
-                display: 'flex',
-                alignItems: 'center',
-                paddingRight: '78px',
-                width: '484px',
-                height: '165px',
-
-                backgroundColor: '#FFE7797D',
-
-                borderRadius: '82px 0px 0px 0px',
-              }}
-            ></Box>
-          </Box>
+          ></Box>
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item>
+          <SubtitleTypography>q terror</SubtitleTypography>
+          <TextTypography>
+            Crie um plano personalizado de acordo com a sua necessidade. Todos
+            os recursos estão disponíveis em todos os planos. Não importa o
+            tamanho da sua empresa, estamos aqui para te ajudar a modernizar o
+            seu atendimento.
+          </TextTypography>
         </Grid>
       </Grid>
     </Grid>
