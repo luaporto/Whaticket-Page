@@ -1,10 +1,10 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
+import * as React from 'react';
+import Box from '@mui/material/Box';
 
-import image1 from "./assets/image1.png";
+import image1 from './assets/image1.png';
 
-import Grid from "@mui/material/Grid";
-import { Stack, Typography } from "@mui/material";
+import Grid from '@mui/material/Grid';
+import { Stack } from '@mui/material';
 
 const Page = ({
   ContainedButton,
@@ -17,14 +17,14 @@ const Page = ({
       <Grid item xs={6}>
         <Box
           sx={{
-            display: "flex",
-            alignItems: "center",
-            paddingRight: "78px",
-            width: "666px",
-            height: "495px",
+            display: 'flex',
+            alignItems: 'center',
+            paddingRight: '78px',
+            width: '666px',
+            height: '495px',
 
-            letterSpacing: "0.025em",
-            color: "#302F2F",
+            letterSpacing: '0.025em',
+            color: '#302F2F',
           }}
         >
           <Stack direction="column" spacing={2}>
@@ -46,14 +46,9 @@ const Page = ({
       <Grid item xs={6}>
         <Box
           sx={{
-            display: "flex",
-            alignItems: "center",
-            paddingRight: "78px",
-            width: "666px",
-            height: "495px",
-
-            letterSpacing: "0.025em",
-            color: "#302F2F",
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
           }}
         >
           <img src={image1} alt="" />
@@ -63,13 +58,13 @@ const Page = ({
         <Grid item xs={6}>
           <Box
             sx={{
-              display: "flex",
-              paddingRight: "78px",
-              width: "666px",
-              height: "495px",
+              display: 'flex',
+              paddingRight: '78px',
+              width: '666px',
+              height: '495px',
 
-              letterSpacing: "0.025em",
-              color: "#302F2F",
+              letterSpacing: '0.025em',
+              color: '#302F2F',
             }}
           >
             <Stack direction="column" spacing={2}>
@@ -84,18 +79,18 @@ const Page = ({
             </Stack>
           </Box>
         </Grid>
-        <Grid item>
+        <Grid item xs={6}>
           <Box
             sx={{
-              display: "flex",
-              alignItems: "center",
-              paddingRight: "78px",
-              width: "484px",
-              height: "165px",
+              display: 'flex',
+              alignItems: 'center',
+              // paddingRight: '78px',
+              width: '484px',
+              height: '165px',
 
-              backgroundColor: "#FFE7797D",
+              backgroundColor: '#FFE7797D',
 
-              borderRadius: "82px 0px 0px 0px",
+              borderRadius: '82px 0px 0px 0px',
             }}
           ></Box>
         </Grid>
