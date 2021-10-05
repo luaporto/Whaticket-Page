@@ -2,7 +2,7 @@ import { Box, Button, Stack, Typography } from '@mui/material';
 import '../App.css';
 import icon from '../assets/icon.png';
 
-const TopBar = () => {
+const TopBar = ({ ContainedButton, ButtonTypography }) => {
   return (
     <>
       <Box
@@ -56,29 +56,18 @@ const TopBar = () => {
           <Stack direction="row" spacing={2}>
             <Button
               sx={{
-                fontSize: '20px',
-                fontFamily: 'Nunito, sans-serife',
-                fontWeight: '800',
+                borderRadius: '10px',
+                width: '100px',
+                height: '55px',
                 textTransform: 'none',
               }}
               color="secondary"
             >
-              Entrar
+              <ButtonTypography>Entrar</ButtonTypography>
             </Button>
-            <Button
-              sx={{
-                width: '146px',
-                height: '27px',
-                fontSize: '20px',
-                fontFamily: 'Nunito, sans-serife',
-                fontWeight: '700',
-                textTransform: 'none',
-              }}
-              variant="contained"
-              color="primary"
-            >
-              Contrate agora
-            </Button>
+            <ContainedButton variant="contained" color="primary">
+              <ButtonTypography>Contrate agora</ButtonTypography>
+            </ContainedButton>
           </Stack>
         </Stack>
       </Box>
