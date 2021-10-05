@@ -1,6 +1,6 @@
-import { Box, Button, Stack, Typography } from '@mui/material';
-import '../App.css';
-import icon from '../assets/icon.png';
+import { Box, Button, Stack, Typography } from "@mui/material";
+import "../App.css";
+import icon from "../assets/icon.png";
 
 const TopBar = ({ ContainedButton, ButtonTypography }) => {
   return (
@@ -8,28 +8,24 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
       <Box
         sx={{
           zIndex: 100,
-          backgroundColor: '#ffffff',
-          position: 'sticky',
-          top: '0px',
-          height: '25px',
-        }}
-      ></Box>
-      <Box
-        sx={{
-          zIndex: 100,
-          fontStyle: 'normal',
-          fontSize: '20px',
-          letterSpacing: '0.025em',
-          position: 'sticky',
-          top: '10px',
-          backgroundColor: '#ffffff',
-          height: '75px',
+          fontStyle: "normal",
+          fontSize: "20px",
+          letterSpacing: "0.025em",
+          position: "sticky",
+          top: 0,
+          backgroundColor: "#fff",
+          height: "75px",
+          margin: "15px -100px 0 -100px",
         }}
       >
         <Stack
           direction="row"
           justifyContent="space-between"
           alignItems="center"
+          sx={{
+            paddingTop: "10px",
+            margin: "10px 95px 10px 75px",
+          }}
         >
           <Stack direction="row">
             <img
@@ -42,12 +38,12 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
             />
 
             <Typography
-              sx={{ fontSize: '36px', fontFamily: 'Mada', fontWeight: '400' }}
+              sx={{ fontSize: "36px", fontFamily: "Mada", fontWeight: "400" }}
             >
               Wha
             </Typography>
             <Typography
-              sx={{ fontSize: '36px', fontFamily: 'Mada', fontWeight: '700' }}
+              sx={{ fontSize: "36px", fontFamily: "Mada", fontWeight: "700" }}
             >
               ticket
             </Typography>
@@ -56,10 +52,10 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
           <Stack direction="row" spacing={2}>
             <Button
               sx={{
-                borderRadius: '10px',
-                width: '100px',
-                height: '55px',
-                textTransform: 'none',
+                borderRadius: "10px",
+                width: "100px",
+                height: "55px",
+                textTransform: "none",
               }}
               color="secondary"
             >

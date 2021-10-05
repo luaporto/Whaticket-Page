@@ -94,6 +94,15 @@ function App() {
           />
           <Box style={{ height: 10000 }}></Box>
         </Container>
+        <SubtitleTypography
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          AAAAAAAAAAAAAAAAAAAAAAAA
+        </SubtitleTypography>
       </ThemeProvider>
     </>
   );

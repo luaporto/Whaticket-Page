@@ -48,7 +48,12 @@ const Page = ({
           sx={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
+            paddingRight: "78px",
+            width: "666px",
+            height: "495px",
+
+            letterSpacing: "0.025em",
+            color: "#302F2F",
           }}
         >
           <img src={image1} alt="" />
