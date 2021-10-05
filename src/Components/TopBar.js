@@ -34,12 +34,8 @@ const TopBar = () => {
           <Stack direction="row">
             <img
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                paddingRight: '2px',
-                width: 100,
-                height: 100,
-                paddingRight: 11,
+                width: 50,
+                height: 50,
               }}
               src={icon}
               alt=""
@@ -58,8 +54,29 @@ const TopBar = () => {
           </Stack>
 
           <Stack direction="row" spacing={2}>
-            <Button color="secondary">Entrar</Button>
-            <Button variant="contained" color="primary">
+            <Button
+              sx={{
+                fontSize: '20px',
+                fontFamily: 'Nunito, sans-serife',
+                fontWeight: '800',
+                textTransform: 'none',
+              }}
+              color="secondary"
+            >
+              Entrar
+            </Button>
+            <Button
+              sx={{
+                width: '146px',
+                height: '27px',
+                fontSize: '20px',
+                fontFamily: 'Nunito, sans-serife',
+                fontWeight: '700',
+                textTransform: 'none',
+              }}
+              variant="contained"
+              color="primary"
+            >
               Contrate agora
             </Button>
           </Stack>
