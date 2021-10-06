@@ -17,6 +17,17 @@ const ContainedButton = styled(Button)({
   height: "55px",
   textTransform: "none",
 });
+const CardBox = styled(Box)({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  // padding: '78px',
+  width: "330px",
+  height: "311px",
+
+  backgroundColor: "#F4C2C9",
+  borderRadius: "40px 40px 0px 0px",
+});
 
 const ButtonTypography = styled(Typography)({
   fontFamily: "Nunito",
@@ -140,6 +151,7 @@ function App() {
             PriceTimeTypography={PriceTimeTypography}
             PriceTitleTypography={PriceTitleTypography}
             PriceListStack={PriceListStack}
+            CardBox={CardBox}
           />
           <Box sx={{ height: "10000px" }}></Box>
         </Container>
