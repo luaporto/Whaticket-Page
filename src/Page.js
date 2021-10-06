@@ -2,6 +2,9 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 
 import image1 from './assets/image1.png';
+import multipleUsers from './assets/multipleUsers.png';
+import fastResponses from './assets/fastResponses.png';
+import reports from './assets/reports.png';
 
 import Grid from '@mui/material/Grid';
 import { Stack } from '@mui/material';
@@ -87,6 +90,7 @@ const Page = ({
               // paddingRight: '78px',
               width: '484px',
               height: '165px',
+              marginLeft: 'auto',
 
               backgroundColor: '#FFE7797D',
 
@@ -95,6 +99,32 @@ const Page = ({
           ></Box>
         </Grid>
       </Grid>
+
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={2}>
+          <Grid item xs={4}>
+            <img src={multipleUsers} alt="" />
+
+            <Stack direction="column" spacing={2}>
+              <SubtitleTypography>Multiplos atendentes</SubtitleTypography>
+
+              <TextTypography>
+                Cadastre toda a sua equipe no Whaticket. Cada atendente recebe o
+                atendimento de forma organizada, e você pode acompanhar todos
+                eles em tempo real.
+              </TextTypography>
+            </Stack>
+          </Grid>
+
+          <Grid item xs={4}>
+            <img src={fastResponses} alt="" />
+          </Grid>
+          <Grid item xs={4}>
+            <img src={reports} alt="" />
+          </Grid>
+        </Grid>
+      </Box>
+
       <Grid container>
         <Grid item>
           <SubtitleTypography>q terror</SubtitleTypography>

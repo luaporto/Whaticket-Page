@@ -1,5 +1,5 @@
 import { Box, Container, Button, CssBaseline, Typography } from '@mui/material';
-import './App.css';
+// import './App.css';
 import { createTheme, ThemeProvider } from '@mui/material';
 import TopBar from './Components/TopBar';
 import Page from './Page';
@@ -74,9 +74,9 @@ function App() {
         </Container>
         <SubtitleTypography
           sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
           }}
         >
           AAAAAAAAAAAAAAAAAAAAAAAA
