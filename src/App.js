@@ -1,5 +1,4 @@
 import { Box, Container, Button, CssBaseline, Typography } from '@mui/material';
-// import './App.css';
 import { createTheme, ThemeProvider } from '@mui/material';
 import TopBar from './Components/TopBar';
 import Page from './Page';
@@ -28,6 +27,16 @@ const SubtitleTypography = styled(Typography)({
   fontSize: '48px',
   fontWeight: '800',
   lineHeight: '65px',
+});
+
+const CardSubtitleTypography = styled(Typography)({
+  fontFamily: 'Nunito',
+  fontSize: '24px',
+  fontStyle: 'normal',
+  fontWeight: 800,
+  lineHeight: '33px',
+  letterSpacing: '0.025em',
+  textAlign: 'center',
 });
 
 const TextTypography = styled(Typography)({
@@ -69,18 +78,9 @@ function App() {
             ButtonTypography={ButtonTypography}
             SubtitleTypography={SubtitleTypography}
             TextTypography={TextTypography}
+            CardSubtitleTypography={CardSubtitleTypography}
           />
-          <Box style={{ height: 10000 }}></Box>
         </Container>
-        <SubtitleTypography
-          sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          AAAAAAAAAAAAAAAAAAAAAAAA
-        </SubtitleTypography>
       </ThemeProvider>
     </>
   );
