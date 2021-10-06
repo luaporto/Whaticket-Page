@@ -1,70 +1,75 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
+import * as React from "react";
+import Box from "@mui/material/Box";
 
-import image1 from './assets/image1.png';
+import image1 from "./assets/image1.png";
+import image2 from "./assets/image2.png";
+import whaticketPrint from "./assets/whaticketPrint.png";
 
-import Grid from '@mui/material/Grid';
-import { Stack } from '@mui/material';
+import Grid from "@mui/material/Grid";
+import { Stack } from "@mui/material";
 
 const Page = ({
   ContainedButton,
   TextTypography,
   ButtonTypography,
   SubtitleTypography,
+  CardSubtitleTypography,
 }) => {
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={6}>
-        <Box
-          sx={{
-            display: 'flex',
-            alignItems: 'center',
-            paddingRight: '78px',
-            width: '666px',
-            height: '495px',
+    <>
+      <Grid container spacing={2}>
+        <Grid item xs={6}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              paddingRight: "78px",
+              width: "666px",
 
-            letterSpacing: '0.025em',
-            color: '#302F2F',
-          }}
-        >
-          <Stack direction="column" spacing={2}>
-            <SubtitleTypography>
-              Todos os seus atendentes no mesmo número de Whatsapp.
-            </SubtitleTypography>
+              letterSpacing: "0.025em",
+              color: "#302F2F",
+            }}
+          >
+            <Stack direction="column" spacing={2}>
+              <SubtitleTypography>
+                Todos os seus atendentes no mesmo número de Whatsapp.
+              </SubtitleTypography>
 
-            <TextTypography>
-              Organize o atendimento da sua empresa com o Whaticket, centralize
-              todos os atendimentos em um único lugar e tenha visão clara de
-              toda a comunicação com os seus clientes.
-            </TextTypography>
-            <ContainedButton variant="contained" color="primary">
-              <ButtonTypography>Contrate agora</ButtonTypography>
-            </ContainedButton>
-          </Stack>
-        </Box>
-      </Grid>
-      <Grid item xs={6}>
-        <Box
-          sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <img src={image1} alt="" />
-        </Box>
+              <TextTypography>
+                Organize o atendimento da sua empresa com o Whaticket,
+                centralize todos os atendimentos em um único lugar e tenha visão
+                clara de toda a comunicação com os seus clientes.
+              </TextTypography>
+              <ContainedButton variant="contained" color="primary">
+                <ButtonTypography>Contrate agora</ButtonTypography>
+              </ContainedButton>
+            </Stack>
+          </Box>
+        </Grid>
+        <Grid item xs={6}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              marginTop: "-75px",
+            }}
+          >
+            <img src={image1} alt="" />
+          </Box>
+        </Grid>
       </Grid>
       <Grid container spacing={2}>
         <Grid item xs={6}>
           <Box
             sx={{
-              display: 'flex',
-              paddingRight: '78px',
-              width: '666px',
-              height: '495px',
+              display: "flex",
+              paddingRight: "78px",
+              width: "666px",
+              height: "250px",
 
-              letterSpacing: '0.025em',
-              color: '#302F2F',
+              letterSpacing: "0.025em",
+              color: "#302F2F",
             }}
           >
             <Stack direction="column" spacing={2}>
@@ -82,31 +87,46 @@ const Page = ({
         <Grid item xs={6}>
           <Box
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              // paddingRight: '78px',
-              width: '484px',
-              height: '165px',
+              display: "flex",
+              alignItems: "center",
+              height: "180px",
+              marginLeft: "200px",
+              backgroundColor: "#FFE7797D",
 
-              backgroundColor: '#FFE7797D',
-
-              borderRadius: '82px 0px 0px 0px',
+              borderRadius: "82px 0px 0px 0px",
             }}
           ></Box>
         </Grid>
       </Grid>
-      <Grid container>
-        <Grid item>
-          <SubtitleTypography>q terror</SubtitleTypography>
+      <Grid container spacing={2}>
+        <Grid item xs={6}>
+          <SubtitleTypography>
+            Interface amigável para sua equipe trabalhar sem complicação
+          </SubtitleTypography>
           <TextTypography>
-            Crie um plano personalizado de acordo com a sua necessidade. Todos
-            os recursos estão disponíveis em todos os planos. Não importa o
-            tamanho da sua empresa, estamos aqui para te ajudar a modernizar o
-            seu atendimento.
+            A interface simples faz com que sua equipe sinta-se à vontade para
+            realizar os atendimentos com seus clientes. O Whaticket promove
+            solução de problemas, ótima experiência dos usuários, agregando
+            valor ao seu negócio!
           </TextTypography>
         </Grid>
+        <Grid
+          item
+          xs={6}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "300px",
+          }}
+        >
+          <img src={image2} alt="" />
+        </Grid>
       </Grid>
-    </Grid>
+      <Box>
+        <img src={whaticketPrint} alt=""></img>
+      </Box>
+    </>
   );
 };
 

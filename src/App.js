@@ -1,54 +1,63 @@
-import { Box, Container, Button, CssBaseline, Typography } from '@mui/material';
-import './App.css';
-import { createTheme, ThemeProvider } from '@mui/material';
-import TopBar from './Components/TopBar';
-import Page from './Page';
-import { styled } from '@mui/system';
+import { Box, Container, Button, CssBaseline, Typography } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
+import TopBar from "./Components/TopBar";
+import Page from "./Page";
+import { styled } from "@mui/system";
 
 const ContainedButton = styled(Button)({
-  borderRadius: '10px',
-  width: '188px',
-  height: '55px',
-  textTransform: 'none',
+  borderRadius: "10px",
+  width: "188px",
+  height: "55px",
+  textTransform: "none",
 });
 
 const ButtonTypography = styled(Typography)({
-  fontFamily: 'Nunito',
-  fontStyle: 'normal',
-  fontWeight: 'bold',
-  fontSize: '20px',
-  lineHeight: '27px',
-  letterSpacing: '0.025em',
+  fontFamily: "Nunito",
+  fontStyle: "normal",
+  fontWeight: "bold",
+  fontSize: "20px",
+  lineHeight: "27px",
+  letterSpacing: "0.025em",
 });
 
 const SubtitleTypography = styled(Typography)({
-  fontFamily: 'Nunito, sans-serif',
-  variant: 'h2',
-  component: 'div',
-  fontSize: '48px',
-  fontWeight: '800',
-  lineHeight: '65px',
+  fontFamily: "Nunito, sans-serif",
+  variant: "h2",
+  component: "div",
+  fontSize: "48px",
+  fontWeight: "800",
+  lineHeight: "65px",
+});
+
+const CardSubtitleTypography = styled(Typography)({
+  fontFamily: "Nunito",
+  fontSize: "24px",
+  fontStyle: "normal",
+  fontWeight: 800,
+  lineHeight: "33px",
+  letterSpacing: "0.025em",
+  textAlign: "center",
 });
 
 const TextTypography = styled(Typography)({
-  fontFamily: 'Nunito, sans-serif',
-  variant: 'body1',
-  component: 'div',
-  fontSize: '20px',
-  fontWeight: '400',
-  lineHeight: '27px',
+  fontFamily: "Nunito, sans-serif",
+  variant: "body1",
+  component: "div",
+  fontSize: "20px",
+  fontWeight: "400",
+  lineHeight: "27px",
 });
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#00ACC1',
-      contrastText: '#FFFFFF',
-      darker: '#053e85',
+      main: "#00ACC1",
+      contrastText: "#FFFFFF",
+      darker: "#053e85",
     },
     secondary: {
-      main: '#121212',
-      darker: '#053e85',
+      main: "#121212",
+      darker: "#053e85",
     },
   },
 });
@@ -59,7 +68,7 @@ function App() {
       <CssBaseline />
 
       <ThemeProvider theme={theme}>
-        <Container sx={{ backgroundColor: '#ffffff' }}>
+        <Container sx={{ backgroundColor: "#ffffff" }}>
           <TopBar
             ContainedButton={ContainedButton}
             ButtonTypography={ButtonTypography}
@@ -69,18 +78,9 @@ function App() {
             ButtonTypography={ButtonTypography}
             SubtitleTypography={SubtitleTypography}
             TextTypography={TextTypography}
+            CardSubtitleTypography={CardSubtitleTypography}
           />
-          <Box style={{ height: 10000 }}></Box>
         </Container>
-        <SubtitleTypography
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          AAAAAAAAAAAAAAAAAAAAAAAA
-        </SubtitleTypography>
       </ThemeProvider>
     </>
   );
