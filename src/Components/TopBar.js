@@ -1,5 +1,5 @@
 import { Box, Button, Stack, Typography } from '@mui/material';
-// import '../App.css';
+
 import icon from '../assets/icon.png';
 
 const TopBar = ({ ContainedButton, ButtonTypography }) => {
@@ -16,6 +16,7 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
           backgroundColor: '#fff',
           height: '75px',
           margin: '15px -100px 10px -100px',
+          paddingBottom: '150px',
         }}
       >
         <Stack
