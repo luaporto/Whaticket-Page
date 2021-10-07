@@ -1,17 +1,17 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
+import * as React from 'react';
+import Box from '@mui/material/Box';
 
-import multipleUsers from "./assets/multipleUsers.png";
-import fastResponses from "./assets/fastResponses.png";
-import reports from "./assets/reports.png";
-import image1 from "./assets/image1.png";
-import image2 from "./assets/image2.png";
-import whaticketPrint from "./assets/whaticketPrint.png";
-import lightBlueCheck from "./assets/lightBlueCheck.png";
-import lightGreenCheck from "./assets/lightGreenCheck.png";
-import darkCheck from "./assets/darkCheck.png";
+import multipleUsers from './assets/multipleUsers.png';
+import fastResponses from './assets/fastResponses.png';
+import reports from './assets/reports.png';
+import image1 from './assets/image1.png';
+import image2 from './assets/image2.png';
+import whaticketPrint from './assets/whaticketPrint.png';
+import lightBlueCheck from './assets/lightBlueCheck.png';
+import lightGreenCheck from './assets/lightGreenCheck.png';
+import darkCheck from './assets/darkCheck.png';
 
-import Grid from "@mui/material/Grid";
+import Grid from '@mui/material/Grid';
 import {
   CardContent,
   Card,
@@ -20,7 +20,7 @@ import {
   Stack,
   Typography,
   Button,
-} from "@mui/material";
+} from '@mui/material';
 
 const Page = ({
   ContainedButton,
@@ -40,14 +40,14 @@ const Page = ({
         <Grid item xs={6}>
           <Box
             sx={{
-              display: "flex",
-              alignItems: "center",
-              paddingRight: "78px",
-              width: "666px",
+              display: 'flex',
+              alignItems: 'center',
+              paddingRight: '78px',
+              width: '666px',
 
-              letterSpacing: "0.025em",
-              color: "#302F2F",
-              paddingBottom: "100px",
+              letterSpacing: '0.025em',
+              color: '#302F2F',
+              paddingBottom: '100px',
             }}
           >
             <Stack direction="column" spacing={2}>
@@ -69,11 +69,11 @@ const Page = ({
         <Grid item xs={6}>
           <Box
             sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginTop: "-75px",
-              paddingBottom: "100px",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginTop: '-75px',
+              paddingBottom: '100px',
             }}
           >
             <img src={image1} alt="" />
@@ -81,16 +81,16 @@ const Page = ({
         </Grid>
       </Grid>
       <Grid container spacing={2}>
-        <Grid item xs={6} sx={{ paddingBottom: "150px" }}>
+        <Grid item xs={6} sx={{ paddingBottom: '150px' }}>
           <Box
             sx={{
-              display: "flex",
-              paddingRight: "78px",
-              width: "666px",
-              paddingBottom: "100px",
+              display: 'flex',
+              paddingRight: '78px',
+              width: '666px',
+              paddingBottom: '100px',
 
-              letterSpacing: "0.025em",
-              color: "#302F2F",
+              letterSpacing: '0.025em',
+              color: '#302F2F',
             }}
           >
             <Stack direction="column" spacing={2}>
@@ -108,31 +108,27 @@ const Page = ({
         <Grid item xs={6}>
           <Box
             sx={{
-              display: "flex",
-              alignItems: "center",
-              paddingRight: "78px",
-              width: "484px",
-              height: "165px",
-              marginLeft: "auto",
+              display: 'flex',
+              alignItems: 'center',
+              paddingRight: '78px',
+              width: '484px',
+              height: '165px',
+              marginLeft: 'auto',
 
-              backgroundColor: "#FFE7797D",
-              borderRadius: "82px 0px 0px 0px",
+              backgroundColor: '#FFE7797D',
+              borderRadius: '82px 0px 0px 0px',
             }}
           ></Box>
         </Grid>
       </Grid>
-      <Grid container spacing={2}>
-        <Grid item xs={4}>
-          <img src={multipleUsers} alt="" />
-        </Grid>
-      </Grid>
-      <Grid container spacing={10} sx={{ paddingBottom: "200px" }}>
+
+      <Grid container spacing={10} sx={{ paddingBottom: '200px' }}>
         <Grid item xs={4}>
           <Box
             sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
             <img src={multipleUsers} alt="" />
@@ -143,7 +139,7 @@ const Page = ({
               Multiplos atendentes
             </CardSubtitleTypography>
 
-            <TextTypography sx={{ textAlign: "center" }}>
+            <TextTypography sx={{ textAlign: 'center' }}>
               Cadastre toda a sua equipe no Whaticket. Cada atendente recebe o
               atendimento de forma organizada, e você pode acompanhar todos eles
               em tempo real.
@@ -154,9 +150,9 @@ const Page = ({
         <Grid item xs={4}>
           <Box
             sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
             <img src={fastResponses} alt="" />
@@ -164,7 +160,7 @@ const Page = ({
           <Stack direction="column" spacing={2}>
             <CardSubtitleTypography>Respostas rápidas</CardSubtitleTypography>
 
-            <TextTypography sx={{ textAlign: "center" }}>
+            <TextTypography sx={{ textAlign: 'center' }}>
               Chega de ficar repetindo a mesma mensagem várias vezes. Basta
               digitar “/” para acessar a sua lista de mensagens pré cadastradas.
             </TextTypography>
@@ -173,9 +169,9 @@ const Page = ({
         <Grid item xs={4}>
           <Box
             sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
             <img src={reports} alt="" />
@@ -185,7 +181,7 @@ const Page = ({
               Relatório de atendimentos
             </CardSubtitleTypography>
 
-            <TextTypography sx={{ textAlign: "center" }}>
+            <TextTypography sx={{ textAlign: 'center' }}>
               Tenha uma visão geral do tempo de resolução, tempo para a primeira
               resposta e quantidade de atendimentos, com gráficos por período,
               atendente, filas e conexões.
@@ -200,7 +196,7 @@ const Page = ({
                 Separação de departamentos
               </CardSubtitleTypography>
 
-              <TextTypography sx={{ textAlign: "center" }}>
+              <TextTypography sx={{ textAlign: 'center' }}>
                 Cada ticket pode ser atribuído a uma fila de atendimento,
                 facilitando a organização e priorização dos atendimentos.
               </TextTypography>
@@ -214,7 +210,7 @@ const Page = ({
                 Identificação do atendente
               </CardSubtitleTypography>
 
-              <TextTypography sx={{ textAlign: "center" }}>
+              <TextTypography sx={{ textAlign: 'center' }}>
                 Todas as mensagens enviadas pelo Whaticket levam o nome do
                 atendente antes do texto. Assim o seu cliente sempre sabe com
                 quem está falando.
@@ -229,7 +225,7 @@ const Page = ({
                 Chatbot automatizado
               </CardSubtitleTypography>
 
-              <TextTypography sx={{ textAlign: "center" }}>
+              <TextTypography sx={{ textAlign: 'center' }}>
                 Deixe a tecnologia trabalhar por você! Crie chatbots para
                 separar seus atendimentos e levantar informações importantes de
                 forma automática.
@@ -246,24 +242,24 @@ const Page = ({
             // justifyContent: 'center',
 
             //estou sofrendo para encaixar esse box atrás do grid!
-            position: "static",
-            left: "400px",
-            top: "1850px",
-            zIndex: "10",
+            position: 'static',
+            left: '400px',
+            top: '1850px',
+            zIndex: '10',
 
-            marginLeft: "auto",
+            marginLeft: 'auto',
 
-            width: "1152px",
-            height: "138px",
+            width: '1152px',
+            height: '138px',
 
-            backgroundColor: "#6DAFA7DE",
+            backgroundColor: '#6DAFA7DE',
 
-            borderRadius: "0px 82px 0px 0px",
+            borderRadius: '0px 82px 0px 0px',
           }}
         ></Box>
       </Grid>
 
-      <Grid container spacing={2} sx={{ paddingBottom: "200px" }}>
+      <Grid container spacing={2} sx={{ paddingBottom: '200px' }}>
         <Grid item xs={6}>
           <SubtitleTypography>
             Interface amigável para sua equipe trabalhar sem complicação
@@ -279,43 +275,43 @@ const Page = ({
           item
           xs={6}
           sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "300px",
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '300px',
           }}
         >
           <img src={image2} alt="" />
         </Grid>
       </Grid>
-      <Box sx={{ paddingBottom: "100px" }}>
+      <Box sx={{ paddingBottom: '100px' }}>
         <img src={whaticketPrint} alt=""></img>
       </Box>
 
       <Grid container spacing={2}>
         <Box
           sx={{
-            letterSpacing: "0.025em",
-            textAlign: "center",
-            fontStyle: "normal",
+            letterSpacing: '0.025em',
+            textAlign: 'center',
+            fontStyle: 'normal',
           }}
         >
           <Typography
             sx={{
-              fontFamily: "Nunito, sans-serif",
-              fontSize: "36px",
-              fontWeight: "800",
-              lineHeight: "49px",
+              fontFamily: 'Nunito, sans-serif',
+              fontSize: '36px',
+              fontWeight: '800',
+              lineHeight: '49px',
             }}
           >
             Planos que cabem no seu bolso
           </Typography>
           <TextTypography
             sx={{
-              fontFamily: "Nunito, sans-serif",
-              fontSize: "20px",
-              fontWeight: "400",
-              lineHeight: "27px",
+              fontFamily: 'Nunito, sans-serif',
+              fontSize: '20px',
+              fontWeight: '400',
+              lineHeight: '27px',
             }}
           >
             Crie um plano personalizado de acordo com a sua necessidade. Todos
@@ -325,82 +321,82 @@ const Page = ({
           </TextTypography>
         </Box>
         <Grid item xs={4}>
-          <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
+          <Card sx={{ maxWidth: 345, borderRadius: '20px 20px 20px 20px' }}>
             <Box
               sx={{
-                display: "flex",
-                justifyContent: "center",
-                width: "auto",
-                height: "108px",
+                display: 'flex',
+                justifyContent: 'center',
+                width: 'auto',
+                height: '108px',
 
-                background: "#4783F0",
-                borderRadius: "20px 20px 0px 0px",
+                background: '#4783F0',
+                borderRadius: '20px 20px 0px 0px',
               }}
             >
               <PriceTitleTypography
                 sx={{
-                  paddingTop: "35px",
+                  paddingTop: '35px',
                 }}
               >
-                {" "}
-                Código aberto{" "}
+                {' '}
+                Código aberto{' '}
               </PriceTitleTypography>
             </Box>
-            <CardContent sx={{ textAlign: "center" }}>
+            <CardContent sx={{ textAlign: 'center' }}>
               <Box
                 sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "baseline",
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'baseline',
                 }}
               >
-                <PriceTypography sx={{ color: "#4783F0" }}>
+                <PriceTypography sx={{ color: '#4783F0' }}>
                   R$ 0
                 </PriceTypography>
-                <PriceTimeTypography sx={{ color: "#4783F0" }}>
+                <PriceTimeTypography sx={{ color: '#4783F0' }}>
                   /mês
                 </PriceTimeTypography>
               </Box>
 
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Versão de código aberto
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Instalação por sua conta
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Sem atualizações constantes
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Sem suporte oficial
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Comunidade no GitHub
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Funcionalidades básicas
                 </TextTypography>
               </PriceListStack>
 
               <ContainedButton
-                sx={{ marginTop: "25px" }}
+                sx={{ marginTop: '25px' }}
                 variant="contained"
                 href="aaaaaaaaaaaaaaaaaaaaa"
                 color="success"
@@ -415,194 +411,194 @@ const Page = ({
             sx={{
               maxWidth: 345,
               height: 500,
-              borderRadius: "20px 20px 20px 20px",
+              borderRadius: '20px 20px 20px 20px',
             }}
           >
             <Box
               sx={{
-                display: "flex",
-                justifyContent: "center",
-                width: "auto",
-                height: "108px",
+                display: 'flex',
+                justifyContent: 'center',
+                width: 'auto',
+                height: '108px',
 
-                background: "#00ACC1",
-                borderRadius: "20px 20px 0px 0px",
+                background: '#00ACC1',
+                borderRadius: '20px 20px 0px 0px',
               }}
             >
               <Stack>
                 <PriceTitleTypography
                   sx={{
-                    paddingTop: "20px",
+                    paddingTop: '20px',
                   }}
                 >
-                  {" "}
-                  Código aberto{" "}
-                </PriceTitleTypography>{" "}
+                  {' '}
+                  Código aberto{' '}
+                </PriceTitleTypography>{' '}
                 <TextTypography
                   sx={{
-                    textAlign: "center",
-                    color: "#FCEBEB",
+                    textAlign: 'center',
+                    color: '#FCEBEB',
                   }}
                 >
                   Mais popular
                 </TextTypography>
               </Stack>
             </Box>
-            <CardContent sx={{ textAlign: "center" }}>
+            <CardContent sx={{ textAlign: 'center' }}>
               <Box
                 sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "baseline",
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'baseline',
                 }}
               >
-                <PriceTypography sx={{ color: "#00ACC1" }}>
+                <PriceTypography sx={{ color: '#00ACC1' }}>
                   R$ 209,70
                 </PriceTypography>
-                <PriceTimeTypography sx={{ color: "#00ACC1" }}>
+                <PriceTimeTypography sx={{ color: '#00ACC1' }}>
                   /mês
                 </PriceTimeTypography>
               </Box>
 
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Ativação imediata
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Instalação por sua conta
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Sem atualizações constantes
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Sem suporte oficial
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Comunidade no GitHub
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Funcionalidades básicas
                 </TextTypography>
               </PriceListStack>
 
               <ContainedButton
-                sx={{ marginTop: "25px" }}
+                sx={{ marginTop: '25px' }}
                 variant="contained"
                 href="aaaaaaaaaaaaaaaaaaaaa"
                 color="warning"
               >
-                <ButtonTypography sx={{ color: "#fff" }}>
-                  {" "}
-                  Contrate agora{" "}
+                <ButtonTypography sx={{ color: '#fff' }}>
+                  {' '}
+                  Contrate agora{' '}
                 </ButtonTypography>
               </ContainedButton>
             </CardContent>
           </Card>
         </Grid>
         <Grid item xs={4}>
-          <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
+          <Card sx={{ maxWidth: 345, borderRadius: '20px 20px 20px 20px' }}>
             <Box
               sx={{
-                display: "flex",
-                justifyContent: "center",
-                width: "auto",
-                height: "108px",
+                display: 'flex',
+                justifyContent: 'center',
+                width: 'auto',
+                height: '108px',
 
-                background: "#25385C",
-                borderRadius: "20px 20px 0px 0px",
+                background: '#25385C',
+                borderRadius: '20px 20px 0px 0px',
               }}
             >
               <PriceTitleTypography
                 sx={{
-                  paddingTop: "35px",
+                  paddingTop: '35px',
                 }}
               >
-                {" "}
-                Código aberto{" "}
+                {' '}
+                Código aberto{' '}
               </PriceTitleTypography>
             </Box>
-            <CardContent sx={{ textAlign: "center" }}>
+            <CardContent sx={{ textAlign: 'center' }}>
               <Box
                 sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "baseline",
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'baseline',
                 }}
               >
-                <PriceTypography sx={{ color: "#25385C" }}>
+                <PriceTypography sx={{ color: '#25385C' }}>
                   R$ 0
                 </PriceTypography>
-                <PriceTimeTypography sx={{ color: "#25385C" }}>
+                <PriceTimeTypography sx={{ color: '#25385C' }}>
                   /mês
                 </PriceTimeTypography>
               </Box>
 
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Ativação imediata
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   8 usuários simultâneos
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   2 conexões com Whatsapp
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Chatbot multinível ilimitado
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Respostas rápidas
                 </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: "center" }}>
+                <TextTypography sx={{ textAlign: 'center' }}>
                   Relatórios
                 </TextTypography>
               </PriceListStack>
 
               <ContainedButton
-                sx={{ marginTop: "10px" }}
+                sx={{ marginTop: '10px' }}
                 variant="contained"
                 href="aaaaaaaaaaaaaaaaaaaaa"
                 color="danger"
               >
                 <ButtonTypography
                   sx={{
-                    color: "#fff",
+                    color: '#fff',
                   }}
                 >
-                  {" "}
-                  Contrate agora{" "}
+                  {' '}
+                  Contrate agora{' '}
                 </ButtonTypography>
               </ContainedButton>
             </CardContent>
