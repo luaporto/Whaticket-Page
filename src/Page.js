@@ -12,15 +12,7 @@ import lightGreenCheck from './assets/lightGreenCheck.png';
 import darkCheck from './assets/darkCheck.png';
 
 import Grid from '@mui/material/Grid';
-import {
-  CardContent,
-  Card,
-  CardActionArea,
-  CardMedia,
-  Stack,
-  Typography,
-  Button,
-} from '@mui/material';
+import { CardContent, Card, Stack, Typography } from '@mui/material';
 
 const Page = ({
   ContainedButton,
@@ -121,7 +113,6 @@ const Page = ({
           ></Box>
         </Grid>
       </Grid>
-
       <Grid container spacing={10} sx={{ paddingBottom: '200px' }}>
         <Grid item xs={4}>
           <Box
@@ -146,7 +137,6 @@ const Page = ({
             </TextTypography>
           </Stack>
         </Grid>
-
         <Grid item xs={4}>
           <Box
             sx={{
@@ -287,13 +277,26 @@ const Page = ({
       <Box sx={{ paddingBottom: '100px' }}>
         <img src={whaticketPrint} alt=""></img>
       </Box>
+      <Box
+        sx={{
+          position: 'absolute',
+          width: '1450px',
+          height: '500px',
+          zIndex: '1',
+          marginTop: '150px',
 
+          background: '#FFED9C',
+          borderRadius: '720px 0px 0px 0px',
+          transform: 'matrix(-1, 0, 0, 1, 0, 0)',
+        }}
+      />
       <Grid container spacing={2}>
         <Box
           sx={{
             letterSpacing: '0.025em',
             textAlign: 'center',
             fontStyle: 'normal',
+            zIndex: '20',
           }}
         >
           <Typography
@@ -320,7 +323,8 @@ const Page = ({
             seu atendimento.
           </TextTypography>
         </Box>
-        <Grid item xs={4}>
+
+        <Grid item xs={4} sx={{ zIndex: '20' }}>
           <Card sx={{ maxWidth: 345, borderRadius: '20px 20px 20px 20px' }}>
             <Box
               sx={{
@@ -406,7 +410,7 @@ const Page = ({
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={4} sx={{ zIndex: '20' }}>
           <Card
             sx={{
               maxWidth: 345,
@@ -432,7 +436,7 @@ const Page = ({
                   }}
                 >
                   {' '}
-                  Código aberto{' '}
+                  Pro{' '}
                 </PriceTitleTypography>{' '}
                 <TextTypography
                   sx={{
@@ -511,7 +515,7 @@ const Page = ({
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={4} sx={{ zIndex: '20' }}>
           <Card sx={{ maxWidth: 345, borderRadius: '20px 20px 20px 20px' }}>
             <Box
               sx={{
@@ -530,7 +534,7 @@ const Page = ({
                 }}
               >
                 {' '}
-                Código aberto{' '}
+                Enterprise{' '}
               </PriceTitleTypography>
             </Box>
             <CardContent sx={{ textAlign: 'center' }}>
@@ -542,7 +546,7 @@ const Page = ({
                 }}
               >
                 <PriceTypography sx={{ color: '#25385C' }}>
-                  R$ 0
+                  R$ 699,00
                 </PriceTypography>
                 <PriceTimeTypography sx={{ color: '#25385C' }}>
                   /mês

@@ -136,7 +136,13 @@ function App() {
       <CssBaseline />
 
       <ThemeProvider theme={theme}>
-        <Container sx={{ backgroundColor: "#ffffff" }}>
+        <Container
+          sx={{
+            backgroundColor: "#ffffff",
+            borderRadius: "0 0 10px 10px",
+            zIndex: "100",
+          }}
+        >
           <TopBar
             ContainedButton={ContainedButton}
             ButtonTypography={ButtonTypography}
@@ -153,8 +159,10 @@ function App() {
             PriceListStack={PriceListStack}
             CardBox={CardBox}
           />
-          <Box sx={{ height: "10000px" }}></Box>
         </Container>
+        <Box
+          sx={{ backgroundColor: "#00ACC1", width: "auto", height: "100px" }}
+        ></Box>
       </ThemeProvider>
     </>
   );
