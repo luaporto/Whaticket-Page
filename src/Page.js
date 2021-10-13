@@ -1,5 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
+// import icon from '@mui/material/Icon';
 
 import multipleUsers from "./assets/multipleUsers.png";
 import fastResponses from "./assets/fastResponses.png";
@@ -183,9 +184,13 @@ const Page = ({
           </Stack>
         </Grid>
 
-        <Grid item xg={4} md={4} xs={12}>
+        <Grid item sx={{ zIndex: "30" }} xg={4} md={4} xs={12}>
           <CardBox>
-            <Stack direction="column" spacing={2}>
+            <Stack
+              sx={{ marginLeft: "auto", marginRight: "auto", width: "250px" }}
+              direction="column"
+              spacing={2}
+            >
               <CardSubtitleTypography>
                 Separação de departamentos
               </CardSubtitleTypography>
@@ -197,9 +202,13 @@ const Page = ({
             </Stack>
           </CardBox>
         </Grid>
-        <Grid item xg={4} md={4} xs={12}>
+        <Grid item sx={{ zIndex: "30" }} xg={4} md={4} xs={12}>
           <CardBox>
-            <Stack direction="column" spacing={2}>
+            <Stack
+              sx={{ marginLeft: "auto", marginRight: "auto", width: "250px" }}
+              direction="column"
+              spacing={2}
+            >
               <CardSubtitleTypography>
                 Identificação do atendente
               </CardSubtitleTypography>
@@ -212,9 +221,13 @@ const Page = ({
             </Stack>
           </CardBox>
         </Grid>
-        <Grid item xg={4} md={4} xs={12}>
+        <Grid item sx={{ zIndex: "30" }} xg={4} md={4} xs={12}>
           <CardBox>
-            <Stack direction="column" spacing={2}>
+            <Stack
+              sx={{ marginLeft: "auto", marginRight: "auto", width: "250px" }}
+              direction="column"
+              spacing={2}
+            >
               <CardSubtitleTypography>
                 Chatbot automatizado
               </CardSubtitleTypography>
@@ -232,19 +245,18 @@ const Page = ({
           sx={{
             // alignItems: 'center',
             // display: 'flex',
-            // alignItems: 'center',
             // justifyContent: 'center',
 
             //estou sofrendo para encaixar esse box atrás do grid!
-            position: "static",
-            left: "400px",
-            top: "1850px",
+
             zIndex: "10",
 
-            marginLeft: "auto",
+            marginLeft: "80px",
+            marginRight: "-100px",
 
-            width: "1152px",
+            width: "90vw",
             height: "138px",
+            marginTop: "-80px",
 
             backgroundColor: "#6DAFA7DE",
 
@@ -255,16 +267,19 @@ const Page = ({
 
       <Grid container spacing={2} sx={{ paddingBottom: "200px" }}>
         <Grid item xg={6} md={6} xs={12}>
-          <SubtitleTypography>
-            Interface amigável para sua equipe trabalhar sem complicação
-          </SubtitleTypography>
-          <TextTypography>
-            A interface simples faz com que sua equipe sinta-se à vontade para
-            realizar os atendimentos com seus clientes. O Whaticket promove
-            solução de problemas, ótima experiência dos usuários, agregando
-            valor ao seu negócio!
-          </TextTypography>
+          <Stack direction="column" spacing={2}>
+            <SubtitleTypography>
+              Interface amigável para sua equipe trabalhar sem complicação
+            </SubtitleTypography>
+            <TextTypography>
+              A interface simples faz com que sua equipe sinta-se à vontade para
+              realizar os atendimentos com seus clientes. O Whaticket promove
+              solução de problemas, ótima experiência dos usuários, agregando
+              valor ao seu negócio!
+            </TextTypography>
+          </Stack>
         </Grid>
+
         <Grid
           item
           xg={6}
@@ -399,7 +414,7 @@ const Page = ({
               </PriceListStack>
 
               <ContainedButton
-                sx={{ marginTop: "25px" }}
+                sx={{ marginTop: "25px", textAlign: "center" }}
                 variant="contained"
                 href="https://github.com/canove/whaticket"
                 color="success"
@@ -590,7 +605,7 @@ const Page = ({
               </PriceListStack>
 
               <ContainedButton
-                sx={{ marginTop: "25px" }}
+                sx={{ marginTop: "25px", textAlign: "center" }}
                 variant="contained"
                 href="https://app.whaticket.com/signup"
                 color="danger"
@@ -608,6 +623,50 @@ const Page = ({
           </Card>
         </Grid>
       </Grid>
+
+      <Stack direction="column" spacing={4}>
+        <Box
+          sx={{
+            letterSpacing: "0.025em",
+            textAlign: "center",
+            fontStyle: "normal",
+            zIndex: "20",
+            marginLeft: "auto",
+            marginRight: "auto",
+            width: "450px",
+          }}
+        >
+          <Typography
+            sx={{
+              fontFamily: "Nunito, sans-serif",
+              fontSize: "36px",
+              fontWeight: "800",
+              lineHeight: "49px",
+              alignItems: "center",
+            }}
+          >
+            Conheça o Whaticket
+          </Typography>
+          <TextTypography
+            sx={{
+              fontFamily: "Nunito, sans-serif",
+              fontSize: "20px",
+              fontWeight: "400",
+              lineHeight: "27px",
+              alignItems: "center",
+            }}
+          >
+            Cadastre-se gratuitamente e experimente 3 dias do Whaticket. Tenha
+            acesso a plataforma exclusiva. Aproveite!
+          </TextTypography>
+
+          <ContainedButton variant="contained" color="primary">
+            <ButtonTypography href="https://app.whaticket.com/signup">
+              Teste agora
+            </ButtonTypography>
+          </ContainedButton>
+        </Box>
+      </Stack>
     </>
   );
 };
