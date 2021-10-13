@@ -53,7 +53,9 @@ const Page = ({
                 clara de toda a comunicação com os seus clientes.
               </TextTypography>
               <ContainedButton variant="contained" color="primary">
-                <ButtonTypography>Contrate agora</ButtonTypography>
+                <ButtonTypography href="https://app.whaticket.com/signup">
+                  Contrate agora
+                </ButtonTypography>
               </ContainedButton>
             </Stack>
           </Box>
@@ -277,19 +279,7 @@ const Page = ({
       <Box sx={{ paddingBottom: "100px" }}>
         <img src={whaticketPrint} alt=""></img>
       </Box>
-      <Box
-        sx={{
-          position: "absolute",
-          width: "1450px",
-          height: "500px",
-          zIndex: "1",
-          marginTop: "150px",
 
-          background: "#FFED9C",
-          borderRadius: "720px 0px 0px 0px",
-          transform: "matrix(-1, 0, 0, 1, 0, 0)",
-        }}
-      />
       <Grid container spacing={2}>
         <Box
           sx={{
