@@ -14,8 +14,7 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
           position: "sticky",
           top: 0,
           backgroundColor: "#fff",
-          height: "75px",
-          margin: "15px -300px 50px -100px",
+          height: "90px",
         }}
       >
         <Stack
@@ -24,7 +23,7 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
           alignItems="center"
           sx={{
             paddingTop: "10px",
-            margin: "10px 200px 20px 75px",
+            height: "75px",
           }}
         >
           <Stack direction="row">

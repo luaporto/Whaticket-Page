@@ -17,6 +17,7 @@ const ContainedButton = styled(Button)({
   height: "55px",
   textTransform: "none",
 });
+
 const CardBox = styled(Box)({
   display: "flex",
   alignItems: "center",

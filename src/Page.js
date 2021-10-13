@@ -29,7 +29,7 @@ const Page = ({
   return (
     <>
       <Grid container spacing={2}>
-        <Grid item xs={6}>
+        <Grid item xg={6} md={6} xs={12}>
           <Box
             sx={{
               display: "flex",
@@ -52,15 +52,17 @@ const Page = ({
                 centralize todos os atendimentos em um único lugar e tenha visão
                 clara de toda a comunicação com os seus clientes.
               </TextTypography>
-              <ContainedButton variant="contained" color="primary">
-                <ButtonTypography href="https://app.whaticket.com/signup">
-                  Contrate agora
-                </ButtonTypography>
+              <ContainedButton
+                href="https://app.whaticket.com/signup"
+                variant="contained"
+                color="primary"
+              >
+                <ButtonTypography>Contrate agora</ButtonTypography>
               </ContainedButton>
             </Stack>
           </Box>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xg={6} md={6} xs={12}>
           <Box
             sx={{
               display: "flex",
@@ -75,7 +77,7 @@ const Page = ({
         </Grid>
       </Grid>
       <Grid container spacing={2}>
-        <Grid item xs={6} sx={{ paddingBottom: "150px" }}>
+        <Grid item xg={6} md={6} xs={12} sx={{ paddingBottom: "150px" }}>
           <Box
             sx={{
               display: "flex",
@@ -99,7 +101,7 @@ const Page = ({
             </Stack>
           </Box>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xg={6} md={6} xs={12}>
           <Box
             sx={{
               display: "flex",
@@ -116,7 +118,7 @@ const Page = ({
         </Grid>
       </Grid>
       <Grid container spacing={10} sx={{ paddingBottom: "200px" }}>
-        <Grid item xs={4}>
+        <Grid item xg={4} md={4} xs={12}>
           <Box
             sx={{
               display: "flex",
@@ -139,7 +141,7 @@ const Page = ({
             </TextTypography>
           </Stack>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xg={4} md={4} xs={12}>
           <Box
             sx={{
               display: "flex",
@@ -158,7 +160,7 @@ const Page = ({
             </TextTypography>
           </Stack>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xg={4} md={4} xs={12}>
           <Box
             sx={{
               display: "flex",
@@ -181,7 +183,7 @@ const Page = ({
           </Stack>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid item xg={4} md={4} xs={12}>
           <CardBox>
             <Stack direction="column" spacing={2}>
               <CardSubtitleTypography>
@@ -195,7 +197,7 @@ const Page = ({
             </Stack>
           </CardBox>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xg={4} md={4} xs={12}>
           <CardBox>
             <Stack direction="column" spacing={2}>
               <CardSubtitleTypography>
@@ -210,7 +212,7 @@ const Page = ({
             </Stack>
           </CardBox>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xg={4} md={4} xs={12}>
           <CardBox>
             <Stack direction="column" spacing={2}>
               <CardSubtitleTypography>
@@ -252,7 +254,7 @@ const Page = ({
       </Grid>
 
       <Grid container spacing={2} sx={{ paddingBottom: "200px" }}>
-        <Grid item xs={6}>
+        <Grid item xg={6} md={6} xs={12}>
           <SubtitleTypography>
             Interface amigável para sua equipe trabalhar sem complicação
           </SubtitleTypography>
@@ -265,7 +267,9 @@ const Page = ({
         </Grid>
         <Grid
           item
-          xs={6}
+          xg={6}
+          md={6}
+          xs={12}
           sx={{
             display: "flex",
             alignItems: "center",
@@ -280,7 +284,7 @@ const Page = ({
         <img src={whaticketPrint} alt=""></img>
       </Box>
 
-      <Grid container spacing={2}>
+      <Stack direction="column">
         <Box
           sx={{
             letterSpacing: "0.025em",
@@ -305,16 +309,21 @@ const Page = ({
               fontSize: "20px",
               fontWeight: "400",
               lineHeight: "27px",
+              width: "450px",
+              marginLeft: "auto",
+              marginRight: "auto",
             }}
           >
             Crie um plano personalizado de acordo com a sua necessidade. Todos
             os recursos estão disponíveis em todos os planos. Não importa o
             tamanho da sua empresa, estamos aqui para te ajudar a modernizar o
             seu atendimento.
-          </TextTypography>
+          </TextTypography>{" "}
         </Box>
-
-        <Grid item xs={4} sx={{ zIndex: "20" }}>
+      </Stack>
+      <br />
+      <Grid container spacing={2}>
+        <Grid item xg={4} md={4} xs={12} sx={{ zIndex: "20" }}>
           <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
             <Box
               sx={{
@@ -354,33 +363,45 @@ const Page = ({
 
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography>Versão de código aberto</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Versão de código aberto
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography>Instalação por sua conta</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Instalação por sua conta
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography>Sem atualizações constantes</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Sem atualizações constantes
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography>Sem suporte oficial</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Sem suporte oficial
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography>Comunidade no GitHub</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Comunidade no GitHub
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography>Funcionalidades básicas</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Funcionalidades básicas
+                </TextTypography>
               </PriceListStack>
 
               <ContainedButton
                 sx={{ marginTop: "25px" }}
                 variant="contained"
-                href="aaaaaaaaaaaaaaaaaaaaa"
+                href="https://github.com/canove/whaticket"
                 color="success"
               >
                 <ButtonTypography> GitHub </ButtonTypography>
@@ -388,7 +409,7 @@ const Page = ({
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4} sx={{ zIndex: "20" }}>
+        <Grid item xg={4} md={4} xs={12} sx={{ zIndex: "20" }}>
           <Card
             sx={{
               maxWidth: 345,
@@ -444,33 +465,45 @@ const Page = ({
 
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography>Ativação imediata</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Ativação imediata
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography>3 usuários simultâneos</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  3 usuários simultâneos
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography>1 conexão com whatsapp</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  1 conexão com whatsapp
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography>Chatbot multinível ilimitado</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Chatbot multinível ilimitado
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography>Respostas rápidas</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Respostas rápidas
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography>Relatórios</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Relatórios
+                </TextTypography>
               </PriceListStack>
 
               <ContainedButton
                 sx={{ marginTop: "25px", textAlign: "center" }}
                 variant="contained"
-                href="aaaaaaaaaaaaaaaaaaaaa"
+                href="https://app.whaticket.com/signup"
                 color="warning"
               >
                 <ButtonTypography sx={{ color: "#fff" }}>
@@ -481,7 +514,7 @@ const Page = ({
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4} sx={{ zIndex: "20" }}>
+        <Grid item xg={4} md={4} xs={12} sx={{ zIndex: "20" }}>
           <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
             <Box
               sx={{
@@ -521,33 +554,45 @@ const Page = ({
 
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography>Ativação imediata</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Ativação imediata
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography>8 usuários simultâneos</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  8 usuários simultâneos
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography>2 conexões com Whatsapp</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  2 conexões com Whatsapp
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography>Chatbot multinível ilimitado</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Chatbot multinível ilimitado
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography>Respostas rápidas</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Respostas rápidas
+                </TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography>Relatórios</TextTypography>
+                <TextTypography sx={{ marginRight: "auto" }}>
+                  Relatórios
+                </TextTypography>
               </PriceListStack>
 
               <ContainedButton
-                sx={{ marginTop: "10px" }}
+                sx={{ marginTop: "25px" }}
                 variant="contained"
-                href="aaaaaaaaaaaaaaaaaaaaa"
+                href="https://app.whaticket.com/signup"
                 color="danger"
               >
                 <ButtonTypography
