@@ -15,7 +15,7 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
           top: 0,
           backgroundColor: "#fff",
           height: "75px",
-          margin: "15px -100px 10px -100px",
+          margin: "15px -300px 50px -100px",
         }}
       >
         <Stack
@@ -24,7 +24,7 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
           alignItems="center"
           sx={{
             paddingTop: "10px",
-            margin: "10px 95px 10px 75px",
+            margin: "10px 200px 20px 75px",
           }}
         >
           <Stack direction="row">
@@ -52,6 +52,7 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
 
           <Stack direction="row" spacing={2}>
             <Button
+              href="https://app.whaticket.com/login"
               sx={{
                 borderRadius: "10px",
                 width: "100px",
@@ -62,7 +63,11 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
             >
               <ButtonTypography>Entrar</ButtonTypography>
             </Button>
-            <ContainedButton variant="contained" color="primary">
+            <ContainedButton
+              variant="contained"
+              color="primary"
+              href="https://app.whaticket.com/signup"
+            >
               <ButtonTypography>Contrate agora</ButtonTypography>
             </ContainedButton>
           </Stack>

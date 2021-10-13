@@ -139,7 +139,6 @@ function App() {
         <Container
           sx={{
             backgroundColor: "#ffffff",
-            borderRadius: "0 0 10px 10px",
             zIndex: "100",
           }}
         >
@@ -161,7 +160,12 @@ function App() {
           />
         </Container>
         <Box
-          sx={{ backgroundColor: "#00ACC1", width: "auto", height: "100px" }}
+          sx={{
+            backgroundColor: "#00ACC1",
+            width: "auto",
+            height: "100px",
+            zIndex: "200",
+          }}
         ></Box>
       </ThemeProvider>
     </>

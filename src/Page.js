@@ -54,7 +54,9 @@ const Page = ({
                 clara de toda a comunicação com os seus clientes.
               </TextTypography>
               <ContainedButton variant="contained" color="primary">
-                <ButtonTypography>Contrate agora</ButtonTypography>
+                <ButtonTypography href="https://app.whaticket.com/signup">
+                  Contrate agora
+                </ButtonTypography>
               </ContainedButton>
             </Stack>
           </Box>
@@ -238,9 +240,9 @@ const Page = ({
             // top: '1850px',
             // zIndex: '10',
 
-            marginLeft: 'auto',
+            // marginLeft: 'auto',
 
-            width: '1152px',
+            width: '90vw',
             height: '138px',
 
             backgroundColor: '#6DAFA7DE',
@@ -250,6 +252,7 @@ const Page = ({
           }}
         ></Box>
       </Grid>
+
       <Grid container spacing={2} sx={{ paddingBottom: '200px' }}>
         <Grid item xs={6}>
           <Stack direction="column" spacing={2}>
@@ -281,19 +284,7 @@ const Page = ({
       <Box sx={{ paddingBottom: '100px' }}>
         <img src={whaticketPrint} alt=""></img>
       </Box>
-      <Box
-        sx={{
-          position: 'absolute',
-          width: '1450px',
-          height: '500px',
-          zIndex: '1',
-          marginTop: '150px',
 
-          background: '#FFED9C',
-          borderRadius: '720px 0px 0px 0px',
-          transform: 'matrix(-1, 0, 0, 1, 0, 0)',
-        }}
-      />
       <Grid container spacing={2}>
         <Box
           sx={{
@@ -368,39 +359,27 @@ const Page = ({
 
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Versão de código aberto
-                </TextTypography>
+                <TextTypography>Versão de código aberto</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Instalação por sua conta
-                </TextTypography>
+                <TextTypography>Instalação por sua conta</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Sem atualizações constantes
-                </TextTypography>
+                <TextTypography>Sem atualizações constantes</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Sem suporte oficial
-                </TextTypography>
+                <TextTypography>Sem suporte oficial</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Comunidade no GitHub
-                </TextTypography>
+                <TextTypography>Comunidade no GitHub</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightBlueCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Funcionalidades básicas
-                </TextTypography>
+                <TextTypography>Funcionalidades básicas</TextTypography>
               </PriceListStack>
 
               <ContainedButton
@@ -418,7 +397,7 @@ const Page = ({
           <Card
             sx={{
               maxWidth: 345,
-              height: 500,
+              height: 'auto',
               borderRadius: '20px 20px 20px 20px',
             }}
           >
@@ -470,43 +449,31 @@ const Page = ({
 
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Ativação imediata
-                </TextTypography>
+                <TextTypography>Ativação imediata</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Instalação por sua conta
-                </TextTypography>
+                <TextTypography>3 usuários simultâneos</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Sem atualizações constantes
-                </TextTypography>
+                <TextTypography>1 conexão com whatsapp</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Sem suporte oficial
-                </TextTypography>
+                <TextTypography>Chatbot multinível ilimitado</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Comunidade no GitHub
-                </TextTypography>
+                <TextTypography>Respostas rápidas</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={lightGreenCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Funcionalidades básicas
-                </TextTypography>
+                <TextTypography>Relatórios</TextTypography>
               </PriceListStack>
 
               <ContainedButton
-                sx={{ marginTop: '25px' }}
+                sx={{ marginTop: '25px', textAlign: 'center' }}
                 variant="contained"
                 href="aaaaaaaaaaaaaaaaaaaaa"
                 color="warning"
@@ -559,39 +526,27 @@ const Page = ({
 
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Ativação imediata
-                </TextTypography>
+                <TextTypography>Ativação imediata</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  8 usuários simultâneos
-                </TextTypography>
+                <TextTypography>8 usuários simultâneos</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  2 conexões com Whatsapp
-                </TextTypography>
+                <TextTypography>2 conexões com Whatsapp</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Chatbot multinível ilimitado
-                </TextTypography>
+                <TextTypography>Chatbot multinível ilimitado</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Respostas rápidas
-                </TextTypography>
+                <TextTypography>Respostas rápidas</TextTypography>
               </PriceListStack>
               <PriceListStack direction="row">
                 <img src={darkCheck} alt=""></img>
-                <TextTypography sx={{ textAlign: 'center' }}>
-                  Relatórios
-                </TextTypography>
+                <TextTypography>Relatórios</TextTypography>
               </PriceListStack>
 
               <ContainedButton
