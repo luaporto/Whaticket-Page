@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+// import icon from '@mui/material/Icon';
 
 import multipleUsers from './assets/multipleUsers.png';
 import fastResponses from './assets/fastResponses.png';
@@ -226,16 +227,16 @@ const Page = ({
 
         <Box
           sx={{
-            // alignItems: 'center',
-            // display: 'flex',
-            // alignItems: 'center',
-            // justifyContent: 'center',
+            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'center',
 
             //estou sofrendo para encaixar esse box atrás do grid!
-            position: 'static',
-            left: '400px',
-            top: '1850px',
-            zIndex: '10',
+
+            // position: 'static',
+            // left: '400px',
+            // top: '1850px',
+            // zIndex: '10',
 
             marginLeft: 'auto',
 
@@ -244,23 +245,26 @@ const Page = ({
 
             backgroundColor: '#6DAFA7DE',
 
-            borderRadius: '0px 82px 0px 0px',
+            borderRadius: '0px 0px 0px 0px',
+            // borderRadius: '0px 82px 0px 0px',
           }}
         ></Box>
       </Grid>
-
       <Grid container spacing={2} sx={{ paddingBottom: '200px' }}>
         <Grid item xs={6}>
-          <SubtitleTypography>
-            Interface amigável para sua equipe trabalhar sem complicação
-          </SubtitleTypography>
-          <TextTypography>
-            A interface simples faz com que sua equipe sinta-se à vontade para
-            realizar os atendimentos com seus clientes. O Whaticket promove
-            solução de problemas, ótima experiência dos usuários, agregando
-            valor ao seu negócio!
-          </TextTypography>
+          <Stack direction="column" spacing={2}>
+            <SubtitleTypography>
+              Interface amigável para sua equipe trabalhar sem complicação
+            </SubtitleTypography>
+            <TextTypography>
+              A interface simples faz com que sua equipe sinta-se à vontade para
+              realizar os atendimentos com seus clientes. O Whaticket promove
+              solução de problemas, ótima experiência dos usuários, agregando
+              valor ao seu negócio!
+            </TextTypography>
+          </Stack>
         </Grid>
+
         <Grid
           item
           xs={6}
