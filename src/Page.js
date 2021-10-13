@@ -12,15 +12,7 @@ import lightGreenCheck from "./assets/lightGreenCheck.png";
 import darkCheck from "./assets/darkCheck.png";
 
 import Grid from "@mui/material/Grid";
-import {
-  CardContent,
-  Card,
-  CardActionArea,
-  CardMedia,
-  Stack,
-  Typography,
-  Button,
-} from "@mui/material";
+import { CardContent, Card, Stack, Typography } from "@mui/material";
 
 const Page = ({
   ContainedButton,
@@ -47,6 +39,7 @@ const Page = ({
 
               letterSpacing: "0.025em",
               color: "#302F2F",
+              paddingBottom: "100px",
             }}
           >
             <Stack direction="column" spacing={2}>
@@ -269,7 +262,6 @@ const Page = ({
           </TextTypography>
         </Grid>
         <Grid
-          sx={{}}
           item
           xs={6}
           sx={{
@@ -283,16 +275,22 @@ const Page = ({
         </Grid>
       </Grid>
       <Box sx={{ paddingBottom: "100px" }}>
-        <img
-          style={{
-            width: "1100px",
-            height: "auto",
-          }}
-          src={whaticketPrint}
-          alt=""
-        ></img>
+        <img src={whaticketPrint} alt=""></img>
       </Box>
-      <Grid container spacing={2} sx={{ paddingBottom: "75px" }}>
+      <Box
+        sx={{
+          position: "absolute",
+          width: "1450px",
+          height: "500px",
+          zIndex: "1",
+          marginTop: "150px",
+
+          background: "#FFED9C",
+          borderRadius: "720px 0px 0px 0px",
+          transform: "matrix(-1, 0, 0, 1, 0, 0)",
+        }}
+      />
+      <Grid container spacing={2}>
         <Box
           sx={{
             letterSpacing: "0.025em",
@@ -325,6 +323,7 @@ const Page = ({
             seu atendimento.
           </TextTypography>
         </Box>
+
         <Grid item xs={4} sx={{ zIndex: "20" }}>
           <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
             <Box
