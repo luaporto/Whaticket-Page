@@ -182,7 +182,7 @@ const Page = ({
           </Stack>
         </Grid>
 
-        <Grid item xs={4}>
+        <Grid sx={{ zIndex: '30' }} item xs={4}>
           <CardBox>
             <Stack direction="column" spacing={2}>
               <CardSubtitleTypography>
@@ -196,7 +196,7 @@ const Page = ({
             </Stack>
           </CardBox>
         </Grid>
-        <Grid item xs={4}>
+        <Grid sx={{ zIndex: '30' }} item xs={4}>
           <CardBox>
             <Stack direction="column" spacing={2}>
               <CardSubtitleTypography>
@@ -211,7 +211,7 @@ const Page = ({
             </Stack>
           </CardBox>
         </Grid>
-        <Grid item xs={4}>
+        <Grid sx={{ zIndex: '30' }} item xs={4}>
           <CardBox>
             <Stack direction="column" spacing={2}>
               <CardSubtitleTypography>
@@ -229,26 +229,24 @@ const Page = ({
 
         <Box
           sx={{
-            alignItems: 'center',
-            display: 'flex',
-            justifyContent: 'center',
+            // alignItems: 'center',
+            // display: 'flex',
+            // justifyContent: 'center',
 
             //estou sofrendo para encaixar esse box atrás do grid!
 
-            // position: 'static',
-            // left: '400px',
-            // top: '1850px',
-            // zIndex: '10',
+            zIndex: '10',
 
-            // marginLeft: 'auto',
+            marginLeft: '80px',
+            marginRight: '-100px',
 
             width: '90vw',
             height: '138px',
+            marginTop: '-50px',
 
             backgroundColor: '#6DAFA7DE',
 
-            borderRadius: '0px 0px 0px 0px',
-            // borderRadius: '0px 82px 0px 0px',
+            borderRadius: '0px 82px 0px 0px',
           }}
         ></Box>
       </Grid>
