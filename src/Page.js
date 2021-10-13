@@ -184,7 +184,11 @@ const Page = ({
 
         <Grid sx={{ zIndex: '30' }} item xs={4}>
           <CardBox>
-            <Stack direction="column" spacing={2}>
+            <Stack
+              sx={{ marginLeft: 'auto', marginRight: 'auto', width: '250px' }}
+              direction="column"
+              spacing={2}
+            >
               <CardSubtitleTypography>
                 Separação de departamentos
               </CardSubtitleTypography>
@@ -198,7 +202,11 @@ const Page = ({
         </Grid>
         <Grid sx={{ zIndex: '30' }} item xs={4}>
           <CardBox>
-            <Stack direction="column" spacing={2}>
+            <Stack
+              sx={{ marginLeft: 'auto', marginRight: 'auto', width: '250px' }}
+              direction="column"
+              spacing={2}
+            >
               <CardSubtitleTypography>
                 Identificação do atendente
               </CardSubtitleTypography>
@@ -213,7 +221,11 @@ const Page = ({
         </Grid>
         <Grid sx={{ zIndex: '30' }} item xs={4}>
           <CardBox>
-            <Stack direction="column" spacing={2}>
+            <Stack
+              sx={{ marginLeft: 'auto', marginRight: 'auto', width: '250px' }}
+              direction="column"
+              spacing={2}
+            >
               <CardSubtitleTypography>
                 Chatbot automatizado
               </CardSubtitleTypography>
@@ -242,7 +254,7 @@ const Page = ({
 
             width: '90vw',
             height: '138px',
-            marginTop: '-50px',
+            marginTop: '-80px',
 
             backgroundColor: '#6DAFA7DE',
 
@@ -566,6 +578,50 @@ const Page = ({
           </Card>
         </Grid>
       </Grid>
+
+      <Stack direction="column" spacing={4}>
+        <Box
+          sx={{
+            letterSpacing: '0.025em',
+            textAlign: 'center',
+            fontStyle: 'normal',
+            zIndex: '20',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            width: '450px',
+          }}
+        >
+          <Typography
+            sx={{
+              fontFamily: 'Nunito, sans-serif',
+              fontSize: '36px',
+              fontWeight: '800',
+              lineHeight: '49px',
+              alignItems: 'center',
+            }}
+          >
+            Conheça o Whaticket
+          </Typography>
+          <TextTypography
+            sx={{
+              fontFamily: 'Nunito, sans-serif',
+              fontSize: '20px',
+              fontWeight: '400',
+              lineHeight: '27px',
+              alignItems: 'center',
+            }}
+          >
+            Cadastre-se gratuitamente e experimente 3 dias do Whaticket. Tenha
+            acesso a plataforma exclusiva. Aproveite!
+          </TextTypography>
+
+          <ContainedButton variant="contained" color="primary">
+            <ButtonTypography href="https://app.whaticket.com/signup">
+              Teste agora
+            </ButtonTypography>
+          </ContainedButton>
+        </Box>
+      </Stack>
     </>
   );
 };
