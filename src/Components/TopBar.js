@@ -19,7 +19,7 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
       >
         <Stack
           direction="row"
-          justifyContent="space-between"
+          justifyContent="space-around"
           alignItems="center"
           sx={{
             paddingTop: "10px",
