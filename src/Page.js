@@ -15,6 +15,13 @@ import darkCheck from './assets/darkCheck.png';
 import Grid from '@mui/material/Grid';
 import { CardContent, Card, Stack, Typography } from '@mui/material';
 
+// import whiteIcon from './assets/whiteIcon.png';
+import {
+  AccountTreeOutlined,
+  BadgeOutlined,
+  ForumOutlined,
+} from '@mui/icons-material';
+
 const Page = ({
   ContainedButton,
   TextTypography,
@@ -48,7 +55,7 @@ const Page = ({
                 Todos os seus atendentes no mesmo número de Whatsapp.
               </SubtitleTypography>
 
-              <TextTypography>
+              <TextTypography paddingBottom="50px">
                 Organize o atendimento da sua empresa com o Whaticket,
                 centralize todos os atendimentos em um único lugar e tenha visão
                 clara de toda a comunicação com os seus clientes.
@@ -192,6 +199,10 @@ const Page = ({
               spacing={2}
             >
               <CardSubtitleTypography>
+                <AccountTreeOutlined
+                  color="primary"
+                  fontSize="large"
+                ></AccountTreeOutlined>
                 Separação de departamentos
               </CardSubtitleTypography>
 
@@ -210,6 +221,7 @@ const Page = ({
               spacing={2}
             >
               <CardSubtitleTypography>
+                <BadgeOutlined color="primary" fontSize="large"></BadgeOutlined>
                 Identificação do atendente
               </CardSubtitleTypography>
 
@@ -229,6 +241,7 @@ const Page = ({
               spacing={2}
             >
               <CardSubtitleTypography>
+                <ForumOutlined color="primary" fontSize="large"></ForumOutlined>
                 Chatbot automatizado
               </CardSubtitleTypography>
 
@@ -243,12 +256,6 @@ const Page = ({
 
         <Box
           sx={{
-            // alignItems: 'center',
-            // display: 'flex',
-            // justifyContent: 'center',
-
-            //estou sofrendo para encaixar esse box atrás do grid!
-
             zIndex: '10',
 
             marginLeft: '80px',
@@ -643,12 +650,15 @@ const Page = ({
                 fontWeight: '800',
                 lineHeight: '49px',
                 alignItems: 'center',
+                paddingTop: '100px',
               }}
             >
               Conheça o Whaticket
             </Typography>
             <TextTypography
               sx={{
+                paddingBottom: '35px',
+                paddingTop: '20px',
                 fontFamily: 'Nunito, sans-serif',
                 fontSize: '20px',
                 fontWeight: '400',
