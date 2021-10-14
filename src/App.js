@@ -177,6 +177,7 @@ function App() {
             top: 0,
             backgroundColor: '#00ACC1',
             height: '90px',
+            transform: 'matrix(1, 0, 0, 1, 0, 0)',
           }}
         >
           <Stack
