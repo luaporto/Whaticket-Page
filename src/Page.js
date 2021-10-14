@@ -11,6 +11,7 @@ import whaticketPrint from "./assets/whaticketPrint.png";
 import lightBlueCheck from "./assets/lightBlueCheck.png";
 import lightGreenCheck from "./assets/lightGreenCheck.png";
 import darkCheck from "./assets/darkCheck.png";
+import StarRounded from "@mui/icons-material/StarRounded";
 
 import Grid from "@mui/material/Grid";
 import { CardContent, Card, Stack, Typography } from "@mui/material";
@@ -327,6 +328,8 @@ const Page = ({
               width: "450px",
               marginLeft: "auto",
               marginRight: "auto",
+              paddingTop: "35px",
+              paddingBottom: "35px",
             }}
           >
             Crie um plano personalizado de acordo com a sua necessidade. Todos
@@ -443,7 +446,12 @@ const Page = ({
                 borderRadius: "20px 20px 0px 0px",
               }}
             >
-              <Stack>
+              <Stack
+                sx={{
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              >
                 <PriceTitleTypography
                   sx={{
                     paddingTop: "20px",
@@ -461,6 +469,15 @@ const Page = ({
                   Mais popular
                 </TextTypography>
               </Stack>
+              <StarRounded
+                sx={{
+                  color: "#f1edf3",
+                  position: "absolute",
+                  marginLeft: "150px",
+                  width: "50px",
+                  height: "50px",
+                }}
+              />
             </Box>
             <CardContent sx={{ textAlign: "center" }}>
               <Box
