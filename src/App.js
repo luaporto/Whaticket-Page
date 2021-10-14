@@ -14,6 +14,7 @@ import Page from "./Page";
 import { styled } from "@mui/system";
 
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
+
 import whiteIcon from "./assets/whiteIcon.png";
 
 const ContainedButton = styled(Button)({
@@ -220,15 +221,24 @@ function App() {
                 ticket
               </Typography>
             </Stack>
+            <TextTypography
+              sx={{
+                marginTop: "auto",
+
+                color: "#bdbdbd",
+              }}
+            >
+              Feito com ♥ por Whaticket
+            </TextTypography>
 
             <Stack direction="row" spacing={2}>
-              <IconButton sx={{ color: "#fff" }}>
+              <IconButton disabled sx={{ color: "#fff" }}>
                 <Facebook />
               </IconButton>
-              <IconButton sx={{ color: "#fff" }}>
+              <IconButton disabled sx={{ color: "#fff" }}>
                 <Instagram />
               </IconButton>
-              <IconButton sx={{ color: "#fff" }}>
+              <IconButton disabled sx={{ color: "#fff" }}>
                 <LinkedIn />
               </IconButton>
             </Stack>
