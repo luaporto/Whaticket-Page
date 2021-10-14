@@ -21,6 +21,7 @@ const ContainedButton = styled(Button)({
   width: '188px',
   height: '55px',
   textTransform: 'none',
+  filter: 'drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.2))',
 });
 
 const CardBox = styled(Box)({
@@ -29,12 +30,13 @@ const CardBox = styled(Box)({
   justifyContent: 'center',
   // padding: '78px',
   width: '330px',
-  height: '311px',
+  height: '340px',
 
   // zIndex: '30',
 
   backgroundColor: '#F4C2C9',
   borderRadius: '40px 40px 0px 0px',
+  filter: 'drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))',
 });
 
 const ButtonTypography = styled(Typography)({
@@ -44,6 +46,7 @@ const ButtonTypography = styled(Typography)({
   fontSize: '20px',
   lineHeight: '27px',
   letterSpacing: '0.025em',
+  filter: 'drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))',
 });
 
 const SubtitleTypography = styled(Typography)({
@@ -112,6 +115,24 @@ const PriceListStack = styled(Stack)({
   alignItems: 'center',
 });
 
+const FooterBottomWave = styled(Box)({
+  position: 'relative',
+  height: '150px',
+  width: '100%',
+  background: '#00ACC1',
+});
+
+const FooterTopWave = styled(Box)({
+  position: 'absolute',
+  borderRadius: '100%',
+  width: '100%',
+  height: '75px',
+  backgroundColor: '#fff',
+  right: '0px',
+  top: '-40px',
+  filter: 'drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.15))',
+});
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -167,41 +188,25 @@ function App() {
             CardBox={CardBox}
           />
         </Container>
-        <Box
-          sx={{
-            zIndex: 100,
-            fontStyle: 'normal',
-            fontSize: '20px',
-            letterSpacing: '0.025em',
-            position: 'sticky',
-            top: 0,
-            backgroundColor: '#00ACC1',
-            height: '90px',
-            transform: 'matrix(1, 0, 0, 1, 0, 0)',
-          }}
-        >
+
+        <FooterBottomWave>
+          <FooterTopWave />
           <Stack
             direction="row"
             justifyContent="space-around"
             alignItems="center"
             sx={{
-              paddingTop: '10px',
-              height: '75px',
               color: '#fff',
+              paddingTop: '40px',
             }}
           >
             <Stack direction="row">
-              <img
-                style={{
-                  width: 75,
-                  height: 75,
-                }}
-                src={whiteIcon}
-                alt=""
-              />
+              <img style={{ width: 75, height: 75 }} src={whiteIcon} alt="" />
 
               <Typography
                 sx={{
+                  zIndex: 2000,
+
                   fontSize: '36px',
                   fontFamily: 'Mada',
                   fontWeight: '400',
@@ -224,6 +229,7 @@ function App() {
             <TextTypography
               sx={{
                 marginTop: 'auto',
+                fontSize: '15px',
 
                 color: '#bdbdbd',
               }}
@@ -243,7 +249,7 @@ function App() {
               </IconButton>
             </Stack>
           </Stack>
-        </Box>
+        </FooterBottomWave>
       </ThemeProvider>
     </>
   );
