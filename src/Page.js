@@ -1,6 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-// import icon from '@mui/material/Icon';
+// import Icon from '@mui/material/Icon';
 
 import multipleUsers from "./assets/multipleUsers.png";
 import fastResponses from "./assets/fastResponses.png";
@@ -15,6 +15,12 @@ import StarRounded from "@mui/icons-material/StarRounded";
 
 import Grid from "@mui/material/Grid";
 import { CardContent, Card, Stack, Typography } from "@mui/material";
+
+import {
+  AccountTreeOutlined,
+  BadgeOutlined,
+  ForumOutlined,
+} from "@mui/icons-material";
 
 const Page = ({
   ContainedButton,
@@ -49,7 +55,7 @@ const Page = ({
                 Todos os seus atendentes no mesmo número de Whatsapp.
               </SubtitleTypography>
 
-              <TextTypography>
+              <TextTypography paddingBottom="50px">
                 Organize o atendimento da sua empresa com o Whaticket,
                 centralize todos os atendimentos em um único lugar e tenha visão
                 clara de toda a comunicação com os seus clientes.
@@ -79,7 +85,7 @@ const Page = ({
         </Grid>
       </Grid>
       <Grid container spacing={2}>
-        <Grid item xg={6} md={6} xs={12} sx={{ paddingBottom: "150px" }}>
+        <Grid item xg={6} md={6} xs={12} sx={{ paddingBottom: "100px" }}>
           <Box
             sx={{
               display: "flex",
@@ -193,6 +199,10 @@ const Page = ({
               spacing={2}
             >
               <CardSubtitleTypography>
+                <AccountTreeOutlined
+                  color="primary"
+                  fontSize="large"
+                ></AccountTreeOutlined>
                 Separação de departamentos
               </CardSubtitleTypography>
 
@@ -211,6 +221,7 @@ const Page = ({
               spacing={2}
             >
               <CardSubtitleTypography>
+                <BadgeOutlined color="primary" fontSize="large"></BadgeOutlined>
                 Identificação do atendente
               </CardSubtitleTypography>
 
@@ -230,6 +241,7 @@ const Page = ({
               spacing={2}
             >
               <CardSubtitleTypography>
+                <ForumOutlined color="primary" fontSize="large"></ForumOutlined>
                 Chatbot automatizado
               </CardSubtitleTypography>
 
@@ -244,12 +256,6 @@ const Page = ({
 
         <Box
           sx={{
-            // alignItems: 'center',
-            // display: 'flex',
-            // justifyContent: 'center',
-
-            //estou sofrendo para encaixar esse box atrás do grid!
-
             zIndex: "10",
 
             marginLeft: "80px",
@@ -640,50 +646,54 @@ const Page = ({
           </Card>
         </Grid>
       </Grid>
-
-      <Stack direction="column" spacing={4}>
-        <Box
-          sx={{
-            letterSpacing: "0.025em",
-            textAlign: "center",
-            fontStyle: "normal",
-            zIndex: "20",
-            marginLeft: "auto",
-            marginRight: "auto",
-            width: "450px",
-          }}
-        >
-          <Typography
+      <Grid sx={{ paddingBottom: "100px" }}>
+        <Stack direction="column" spacing={4}>
+          <Box
             sx={{
-              fontFamily: "Nunito, sans-serif",
-              fontSize: "36px",
-              fontWeight: "800",
-              lineHeight: "49px",
-              alignItems: "center",
+              letterSpacing: "0.025em",
+              textAlign: "center",
+              fontStyle: "normal",
+              zIndex: "20",
+              marginLeft: "auto",
+              marginRight: "auto",
+              width: "450px",
             }}
           >
-            Conheça o Whaticket
-          </Typography>
-          <TextTypography
-            sx={{
-              fontFamily: "Nunito, sans-serif",
-              fontSize: "20px",
-              fontWeight: "400",
-              lineHeight: "27px",
-              alignItems: "center",
-            }}
-          >
-            Cadastre-se gratuitamente e experimente 3 dias do Whaticket. Tenha
-            acesso a plataforma exclusiva. Aproveite!
-          </TextTypography>
+            <Typography
+              sx={{
+                fontFamily: "Nunito, sans-serif",
+                fontSize: "36px",
+                fontWeight: "800",
+                lineHeight: "49px",
+                alignItems: "center",
+                paddingTop: "100px",
+              }}
+            >
+              Conheça o Whaticket
+            </Typography>
+            <TextTypography
+              sx={{
+                paddingBottom: "35px",
+                paddingTop: "20px",
+                fontFamily: "Nunito, sans-serif",
+                fontSize: "20px",
+                fontWeight: "400",
+                lineHeight: "27px",
+                alignItems: "center",
+              }}
+            >
+              Cadastre-se gratuitamente e experimente 3 dias do Whaticket. Tenha
+              acesso a plataforma exclusiva. Aproveite!
+            </TextTypography>
 
-          <ContainedButton variant="contained" color="primary">
-            <ButtonTypography href="https://app.whaticket.com/signup">
-              Teste agora
-            </ButtonTypography>
-          </ContainedButton>
-        </Box>
-      </Stack>
+            <ContainedButton variant="contained" color="primary">
+              <ButtonTypography href="https://app.whaticket.com/signup">
+                Teste agora
+              </ButtonTypography>
+            </ContainedButton>
+          </Box>
+        </Stack>
+      </Grid>
     </>
   );
 };

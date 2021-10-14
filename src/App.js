@@ -5,7 +5,7 @@ import {
   CssBaseline,
   Typography,
   Stack,
-  Grid,
+  // Grid,
   IconButton,
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material";
@@ -14,7 +14,6 @@ import Page from "./Page";
 import { styled } from "@mui/system";
 
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
-
 import whiteIcon from "./assets/whiteIcon.png";
 
 const ContainedButton = styled(Button)({
