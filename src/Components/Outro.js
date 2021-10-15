@@ -25,6 +25,7 @@ const Outro = ({ TextTypography, ContainedButton, ButtonTypography }) => {
               lineHeight: "49px",
               alignItems: "center",
               paddingTop: "100px",
+              filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))",
             }}
           >
             Conheça o Whaticket

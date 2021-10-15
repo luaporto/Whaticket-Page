@@ -20,20 +20,18 @@ const ContainedButton = styled(Button)({
   width: "188px",
   height: "55px",
   textTransform: "none",
+  filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.2))",
 });
 
 const CardBox = styled(Box)({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  // padding: '78px',
   width: "330px",
-  height: "330px",
-
-  // zIndex: '30',
-
+  height: "340px",
   backgroundColor: "#F4C2C9",
   borderRadius: "40px 40px 0px 0px",
+  filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))",
 });
 
 const ButtonTypography = styled(Typography)({
@@ -43,6 +41,7 @@ const ButtonTypography = styled(Typography)({
   fontSize: "20px",
   lineHeight: "27px",
   letterSpacing: "0.025em",
+  filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))",
 });
 
 const SubtitleTypography = styled(Typography)({
@@ -124,40 +123,25 @@ function App() {
             CardBox={CardBox}
           />
         </Container>
-        <Box
-          sx={{
-            zIndex: 100,
-            fontStyle: "normal",
-            fontSize: "20px",
-            letterSpacing: "0.025em",
-            position: "sticky",
-            top: 0,
-            backgroundColor: "#00ACC1",
-            height: "90px",
-          }}
-        >
+
+        <FooterBottomWave>
+          <FooterTopWave />
           <Stack
             direction="row"
             justifyContent="space-around"
             alignItems="center"
             sx={{
-              paddingTop: "10px",
-              height: "75px",
               color: "#fff",
+              paddingTop: "40px",
             }}
           >
             <Stack direction="row">
-              <img
-                style={{
-                  width: 75,
-                  height: 75,
-                }}
-                src={whiteIcon}
-                alt=""
-              />
+              <img style={{ width: 75, height: 75 }} src={whiteIcon} alt="" />
 
               <Typography
                 sx={{
+                  zIndex: 2000,
+
                   fontSize: "36px",
                   fontFamily: "Mada",
                   fontWeight: "400",
@@ -180,7 +164,7 @@ function App() {
             <TextTypography
               sx={{
                 marginTop: "auto",
-
+                fontSize: "15px",
                 color: "#e0e0e0",
               }}
             >
@@ -199,7 +183,7 @@ function App() {
               </IconButton>
             </Stack>
           </Stack>
-        </Box>
+        </FooterBottomWave>
       </ThemeProvider>
     </>
   );

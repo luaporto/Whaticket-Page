@@ -51,7 +51,16 @@ const PriceListStack = styled(Stack)({
 const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
   return (
     <Grid container spacing={2}>
-      <Grid item xg={4} md={4} xs={12} sx={{ zIndex: "20" }}>
+      <Grid
+        item
+        xg={4}
+        md={4}
+        xs={12}
+        sx={{
+          zIndex: "20",
+          filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))",
+        }}
+      >
         <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
           <Box
             sx={{
@@ -135,7 +144,16 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xg={4} md={4} xs={12} sx={{ zIndex: "20" }}>
+      <Grid
+        item
+        xg={4}
+        md={4}
+        xs={12}
+        sx={{
+          zIndex: "20",
+          filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))",
+        }}
+      >
         <Card
           sx={{
             maxWidth: 345,
@@ -254,7 +272,16 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xg={4} md={4} xs={12} sx={{ zIndex: "20" }}>
+      <Grid
+        item
+        xg={4}
+        md={4}
+        xs={12}
+        sx={{
+          zIndex: "20",
+          filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))",
+        }}
+      >
         <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
           <Box
             sx={{
