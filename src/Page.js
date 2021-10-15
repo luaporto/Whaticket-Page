@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 
 import Intro from "./Components/Intro";
 import SinglePlace from "./Components/SinglePlace";
+import PlansText from "./Components/PlansText";
 import Cards from "./Components/Cards";
 import FriendlyInterface from "./Components/FriendlyInterface";
 import WhaticketPrintScreen from "./Components/WhaticketPrintScreen";
@@ -50,47 +51,7 @@ const Page = ({
         TextTypography={TextTypography}
       />
       <WhaticketPrintScreen />
-
-      <Stack direction="column">
-        <Box
-          sx={{
-            letterSpacing: "0.025em",
-            textAlign: "center",
-            fontStyle: "normal",
-            zIndex: "20",
-          }}
-        >
-          <Typography
-            sx={{
-              fontFamily: "Nunito, sans-serif",
-              fontSize: "36px",
-              fontWeight: "800",
-              lineHeight: "49px",
-            }}
-          >
-            Planos que cabem no seu bolso
-          </Typography>
-          <TextTypography
-            sx={{
-              fontFamily: "Nunito, sans-serif",
-              fontSize: "20px",
-              fontWeight: "400",
-              lineHeight: "27px",
-              width: "450px",
-              marginLeft: "auto",
-              marginRight: "auto",
-              paddingTop: "35px",
-              paddingBottom: "35px",
-            }}
-          >
-            Crie um plano personalizado de acordo com a sua necessidade. Todos
-            os recursos estão disponíveis em todos os planos. Não importa o
-            tamanho da sua empresa, estamos aqui para te ajudar a modernizar o
-            seu atendimento.
-          </TextTypography>{" "}
-        </Box>
-      </Stack>
-      <br />
+      <PlansText TextTypography={TextTypography} />
       <Grid container spacing={2}>
         <Grid item xg={4} md={4} xs={12} sx={{ zIndex: "20" }}>
           <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
