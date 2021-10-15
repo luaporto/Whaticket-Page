@@ -2,10 +2,12 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 // import Icon from '@mui/material/Icon';
 
+import Intro from "./Components/Intro";
+
 import multipleUsers from "./assets/multipleUsers.png";
 import fastResponses from "./assets/fastResponses.png";
 import reports from "./assets/reports.png";
-import image1 from "./assets/image1.png";
+
 import image2 from "./assets/image2.png";
 import whaticketPrint from "./assets/whaticketPrint.png";
 import lightBlueCheck from "./assets/lightBlueCheck.png";
@@ -36,54 +38,12 @@ const Page = ({
 }) => {
   return (
     <>
-      <Grid container spacing={2}>
-        <Grid item xg={6} md={6} xs={12}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              paddingRight: "78px",
-              width: "666px",
-
-              letterSpacing: "0.025em",
-              color: "#302F2F",
-              paddingBottom: "100px",
-            }}
-          >
-            <Stack direction="column" spacing={2}>
-              <SubtitleTypography>
-                Todos os seus atendentes no mesmo número de Whatsapp.
-              </SubtitleTypography>
-
-              <TextTypography paddingBottom="50px">
-                Organize o atendimento da sua empresa com o Whaticket,
-                centralize todos os atendimentos em um único lugar e tenha visão
-                clara de toda a comunicação com os seus clientes.
-              </TextTypography>
-              <ContainedButton
-                href="https://app.whaticket.com/signup"
-                variant="contained"
-                color="primary"
-              >
-                <ButtonTypography>Contrate agora</ButtonTypography>
-              </ContainedButton>
-            </Stack>
-          </Box>
-        </Grid>
-        <Grid item xg={6} md={6} xs={12}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              marginTop: "-75px",
-              paddingBottom: "100px",
-            }}
-          >
-            <img src={image1} alt="" />
-          </Box>
-        </Grid>
-      </Grid>
+      <Intro
+        SubtitleTypography={SubtitleTypography}
+        TextTypography={TextTypography}
+        ContainedButton={ContainedButton}
+        ButtonTypography={ButtonTypography}
+      />
       <Grid container spacing={2}>
         <Grid item xg={6} md={6} xs={12} sx={{ paddingBottom: "100px" }}>
           <Box
@@ -686,10 +646,12 @@ const Page = ({
               acesso a plataforma exclusiva. Aproveite!
             </TextTypography>
 
-            <ContainedButton variant="contained" color="primary">
-              <ButtonTypography href="https://app.whaticket.com/signup">
-                Teste agora
-              </ButtonTypography>
+            <ContainedButton
+              variant="contained"
+              color="primary"
+              href="https://app.whaticket.com/signup"
+            >
+              <ButtonTypography>Teste agora</ButtonTypography>
             </ContainedButton>
           </Box>
         </Stack>

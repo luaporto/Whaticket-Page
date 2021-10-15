@@ -29,7 +29,7 @@ const CardBox = styled(Box)({
   justifyContent: "center",
   // padding: '78px',
   width: "330px",
-  height: "311px",
+  height: "330px",
 
   // zIndex: '30',
 
@@ -224,7 +224,7 @@ function App() {
               sx={{
                 marginTop: "auto",
 
-                color: "#bdbdbd",
+                color: "#e0e0e0",
               }}
             >
               Feito com ♥ por Whaticket
