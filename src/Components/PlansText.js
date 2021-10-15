@@ -33,7 +33,7 @@ const PlansText = ({ TextTypography }) => {
             marginLeft: "auto",
             marginRight: "auto",
             paddingTop: "35px",
-            paddingBottom: "35px",
+            paddingBottom: "50px",
           }}
         >
           Crie um plano personalizado de acordo com a sua necessidade. Todos os

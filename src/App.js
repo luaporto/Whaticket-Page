@@ -122,86 +122,89 @@ function App() {
       <CssBaseline />
 
       <ThemeProvider theme={theme}>
-        <TopBar
-          ContainedButton={ContainedButton}
-          ButtonTypography={ButtonTypography}
-        />
-        <Container
-          sx={{
-            backgroundColor: "#ffffff",
-            zIndex: "100",
-          }}
-        >
-          <Page
+        <div style={{ overflow: "hidden" }}>
+          <TopBar
             ContainedButton={ContainedButton}
             ButtonTypography={ButtonTypography}
-            SubtitleTypography={SubtitleTypography}
-            TextTypography={TextTypography}
-            CardSubtitleTypography={CardSubtitleTypography}
-            CardBox={CardBox}
           />
-        </Container>
-
-        <FooterBottomWave>
-          <FooterTopWave />
-          <Stack
-            direction="row"
-            justifyContent="space-around"
-            alignItems="center"
+          <Container
             sx={{
-              color: "#fff",
-              paddingTop: "40px",
+              backgroundColor: "#ffffff",
+              zIndex: "100",
             }}
           >
-            <Stack direction="row">
-              <img style={{ width: 75, height: 75 }} src={whiteIcon} alt="" />
+            <Page
+              ContainedButton={ContainedButton}
+              ButtonTypography={ButtonTypography}
+              SubtitleTypography={SubtitleTypography}
+              TextTypography={TextTypography}
+              CardSubtitleTypography={CardSubtitleTypography}
+              CardBox={CardBox}
+            />
+          </Container>
 
-              <Typography
-                sx={{
-                  zIndex: 2000,
-
-                  fontSize: "36px",
-                  fontFamily: "Mada",
-                  fontWeight: "400",
-                  marginTop: "15px",
-                }}
-              >
-                Wha
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: "36px",
-                  fontFamily: "Mada",
-                  fontWeight: "700",
-                  marginTop: "15px",
-                }}
-              >
-                ticket
-              </Typography>
-            </Stack>
-            <TextTypography
+          <FooterBottomWave>
+            <FooterTopWave />
+            <Stack
+              direction="row"
+              justifyContent="space-around"
+              alignItems="center"
               sx={{
-                marginTop: "auto",
-                fontSize: "15px",
-                color: "#e0e0e0",
+                color: "#fff",
+                paddingTop: "40px",
               }}
             >
-              Feito com ♥ por Whaticket
-            </TextTypography>
+              <Stack direction="row">
+                <img style={{ width: 75, height: 75 }} src={whiteIcon} alt="" />
 
-            <Stack direction="row" spacing={2}>
-              <IconButton disabled sx={{ color: "#fff" }}>
-                <Facebook />
-              </IconButton>
-              <IconButton disabled sx={{ color: "#fff" }}>
-                <Instagram />
-              </IconButton>
-              <IconButton disabled sx={{ color: "#fff" }}>
-                <LinkedIn />
-              </IconButton>
+                <Typography
+                  sx={{
+                    zIndex: 2000,
+
+                    fontSize: "36px",
+                    fontFamily: "Mada",
+                    fontWeight: "400",
+                    marginTop: "15px",
+                  }}
+                >
+                  Wha
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "36px",
+                    fontFamily: "Mada",
+                    fontWeight: "700",
+                    marginTop: "15px",
+                  }}
+                >
+                  ticket
+                </Typography>
+              </Stack>
+              <TextTypography
+                sx={{
+                  marginTop: "100px",
+                  fontSize: "15px",
+                  color: "#e0e0e0",
+                  position: "absolute",
+                }}
+              >
+                Feito com ♥ por Whaticket
+              </TextTypography>
+
+              <Stack direction="row" spacing={2}>
+                <IconButton disabled sx={{ color: "#fff" }}>
+                  <Facebook />
+                </IconButton>
+                <IconButton disabled sx={{ color: "#fff" }}>
+                  <Instagram />
+                </IconButton>
+                <IconButton disabled sx={{ color: "#fff" }}>
+                  <LinkedIn />
+                </IconButton>
+              </Stack>
             </Stack>
-          </Stack>
-        </FooterBottomWave>
+          </FooterBottomWave>
+        </div>
       </ThemeProvider>
     </>
   );

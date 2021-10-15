@@ -59,9 +59,16 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
         sx={{
           zIndex: "20",
           filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))",
+          paddingBottom: "30px",
         }}
       >
-        <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
+        <Card
+          sx={{
+            maxWidth: 345,
+            height: "auto",
+            borderRadius: "20px 20px 20px 20px",
+          }}
+        >
           <Box
             sx={{
               display: "flex",
@@ -151,7 +158,8 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
         xs={12}
         sx={{
           zIndex: "20",
-          filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))",
+          filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.34))",
+          marginTop: "-30px",
         }}
       >
         <Card
@@ -199,7 +207,7 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
               sx={{
                 color: "#f1edf3",
                 position: "absolute",
-                marginLeft: "150px",
+                marginLeft: "290px",
                 width: "50px",
                 height: "50px",
               }}
@@ -213,7 +221,13 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
                 alignItems: "baseline",
               }}
             >
-              <PriceTypography sx={{ color: "#00ACC1" }}>
+              <PriceTypography
+                sx={{
+                  color: "#00ACC1",
+                  paddingTop: "20px",
+                  paddingBottom: "20px",
+                }}
+              >
                 R$ 209,70
               </PriceTypography>
               <PriceTimeTypography sx={{ color: "#00ACC1" }}>
@@ -259,7 +273,11 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
             </PriceListStack>
 
             <ContainedButton
-              sx={{ marginTop: "25px", textAlign: "center" }}
+              sx={{
+                marginTop: "30px",
+                marginBottom: "30px",
+                textAlign: "center",
+              }}
               variant="contained"
               href="https://app.whaticket.com/signup"
               color="warning"
