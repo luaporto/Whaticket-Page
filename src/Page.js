@@ -5,9 +5,9 @@ import Box from "@mui/material/Box";
 import Intro from "./Components/Intro";
 import SinglePlace from "./Components/SinglePlace";
 import Cards from "./Components/Cards";
+import FriendlyInterface from "./Components/FriendlyInterface";
+import WhaticketPrintScreen from "./Components/WhaticketPrintScreen";
 
-import image2 from "./assets/image2.png";
-import whaticketPrint from "./assets/whaticketPrint.png";
 import lightBlueCheck from "./assets/lightBlueCheck.png";
 import lightGreenCheck from "./assets/lightGreenCheck.png";
 import darkCheck from "./assets/darkCheck.png";
@@ -45,40 +45,11 @@ const Page = ({
         CardBox={CardBox}
         TextTypography={TextTypography}
       />
-
-      <Grid container spacing={2} sx={{ paddingBottom: "200px" }}>
-        <Grid item xg={6} md={6} xs={12}>
-          <Stack direction="column" spacing={2}>
-            <SubtitleTypography>
-              Interface amigável para sua equipe trabalhar sem complicação
-            </SubtitleTypography>
-            <TextTypography>
-              A interface simples faz com que sua equipe sinta-se à vontade para
-              realizar os atendimentos com seus clientes. O Whaticket promove
-              solução de problemas, ótima experiência dos usuários, agregando
-              valor ao seu negócio!
-            </TextTypography>
-          </Stack>
-        </Grid>
-
-        <Grid
-          item
-          xg={6}
-          md={6}
-          xs={12}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "300px",
-          }}
-        >
-          <img src={image2} alt="" />
-        </Grid>
-      </Grid>
-      <Box sx={{ paddingBottom: "100px" }}>
-        <img src={whaticketPrint} alt=""></img>
-      </Box>
+      <FriendlyInterface
+        SubtitleTypography={SubtitleTypography}
+        TextTypography={TextTypography}
+      />
+      <WhaticketPrintScreen />
 
       <Stack direction="column">
         <Box
