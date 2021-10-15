@@ -72,6 +72,24 @@ const TextTypography = styled(Typography)({
   lineHeight: "27px",
 });
 
+const FooterBottomWave = styled(Box)({
+  position: "relative",
+  height: "150px",
+  width: "100%",
+  background: "#00ACC1",
+});
+
+const FooterTopWave = styled(Box)({
+  position: "absolute",
+  borderRadius: "100%",
+  width: "100%",
+  height: "75px",
+  backgroundColor: "#fff",
+  right: "0px",
+  top: "-40px",
+  filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.15))",
+});
+
 const theme = createTheme({
   palette: {
     primary: {

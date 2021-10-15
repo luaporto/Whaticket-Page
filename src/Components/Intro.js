@@ -11,7 +11,7 @@ const Intro = ({
   ButtonTypography,
 }) => {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} sx={{ paddingTop: "10px" }}>
       <Grid item xg={6} md={6} xs={12}>
         <Box
           sx={{
@@ -22,7 +22,6 @@ const Intro = ({
 
             letterSpacing: "0.025em",
             color: "#302F2F",
-            paddingBottom: "100px",
           }}
         >
           <Stack direction="column" spacing={2}>
