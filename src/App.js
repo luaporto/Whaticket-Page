@@ -5,7 +5,6 @@ import {
   CssBaseline,
   Typography,
   Stack,
-  // Grid,
   IconButton,
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material";
@@ -74,44 +73,6 @@ const TextTypography = styled(Typography)({
   lineHeight: "27px",
 });
 
-const PriceTypography = styled(Typography)({
-  fontFamily: "Nunito",
-  fontStyle: "normal",
-  fontWeight: "800",
-  fontSize: "30px",
-  lineHeight: "41px",
-  letterSpacing: "0.025em",
-});
-
-const PriceTitleTypography = styled(Typography)({
-  fontFamily: "Nunito",
-  fontStyle: "normal",
-  fontWeight: "800",
-  fontSize: "30px",
-  lineHeight: "41px",
-
-  color: "#fff",
-  textAlign: "center",
-  letterSpacing: "0.025em",
-});
-
-const PriceTimeTypography = styled(Typography)({
-  fontFamily: "Nunito",
-  fontStyle: "normal",
-  fontWeight: "600",
-  fontSize: "20px",
-  lineHeight: "27px",
-  letterSpacing: "0.025em",
-
-  color: "#4783F0",
-});
-
-const PriceListStack = styled(Stack)({
-  direction: "row",
-  justifyContent: "space-between",
-  alignItems: "center",
-});
-
 const theme = createTheme({
   palette: {
     primary: {
@@ -160,10 +121,6 @@ function App() {
             SubtitleTypography={SubtitleTypography}
             TextTypography={TextTypography}
             CardSubtitleTypography={CardSubtitleTypography}
-            PriceTypography={PriceTypography}
-            PriceTimeTypography={PriceTimeTypography}
-            PriceTitleTypography={PriceTitleTypography}
-            PriceListStack={PriceListStack}
             CardBox={CardBox}
           />
         </Container>
