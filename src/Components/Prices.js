@@ -53,8 +53,8 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
     <Grid container spacing={2}>
       <Grid
         item
-        xg={4}
-        md={4}
+        lg={4}
+        md={6}
         xs={12}
         sx={{
           zIndex: "20",
@@ -67,6 +67,8 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
             maxWidth: 345,
             height: "auto",
             borderRadius: "20px 20px 20px 20px",
+            marginLeft: "auto",
+            marginRight: "auto",
           }}
         >
           <Box
@@ -153,8 +155,8 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
       </Grid>
       <Grid
         item
-        xg={4}
-        md={4}
+        lg={4}
+        md={6}
         xs={12}
         sx={{
           zIndex: "20",
@@ -167,6 +169,8 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
             maxWidth: 345,
             height: "auto",
             borderRadius: "20px 20px 20px 20px",
+            marginLeft: "auto",
+            marginRight: "auto",
           }}
         >
           <Box
@@ -292,15 +296,24 @@ const Prices = ({ TextTypography, ContainedButton, ButtonTypography }) => {
       </Grid>
       <Grid
         item
-        xg={4}
-        md={4}
+        lg={4}
+        md={6}
         xs={12}
         sx={{
           zIndex: "20",
           filter: "drop-shadow(11px 14px 17px rgba(37, 56, 92, 0.29))",
+          marginLeft: "auto",
+          marginRight: "auto",
         }}
       >
-        <Card sx={{ maxWidth: 345, borderRadius: "20px 20px 20px 20px" }}>
+        <Card
+          sx={{
+            maxWidth: 345,
+            borderRadius: "20px 20px 20px 20px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
           <Box
             sx={{
               display: "flex",

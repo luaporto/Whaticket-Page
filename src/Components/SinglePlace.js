@@ -5,16 +5,18 @@ import React from "react";
 const SinglePlace = ({ SubtitleTypography, TextTypography }) => {
   return (
     <Grid container spacing={2}>
-      <Grid item xg={6} md={6} xs={12} sx={{ paddingBottom: "100px" }}>
+      <Grid item lg={6} md={12} xs={12} sx={{ paddingBottom: "100px" }}>
         <Box
           sx={{
             display: "flex",
             paddingRight: "78px",
-            width: "666px",
-            paddingBottom: "100px",
+
+            maxWidth: "666px",
 
             letterSpacing: "0.025em",
             color: "#302F2F",
+            marginLeft: "auto",
+            marginRight: "auto",
           }}
         >
           <Stack direction="column" spacing={2}>
@@ -29,15 +31,16 @@ const SinglePlace = ({ SubtitleTypography, TextTypography }) => {
           </Stack>
         </Box>
       </Grid>
-      <Grid item xg={6} md={6} xs={12}>
+      <Grid item lg={6} md={12} xs={12} sx={{ paddingBottom: "100px" }}>
         <Box
           sx={{
             display: "flex",
             alignItems: "center",
             paddingRight: "78px",
-            width: "484px",
+            maxWidth: "484px",
             height: "165px",
             marginLeft: "auto",
+            marginRight: "auto",
 
             backgroundColor: "#FFE7797D",
             borderRadius: "82px 0px 0px 0px",

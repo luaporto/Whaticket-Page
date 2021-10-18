@@ -6,7 +6,13 @@ import image2 from "../assets/image2.png";
 const FriendlyInterface = ({ SubtitleTypography, TextTypography }) => {
   return (
     <Grid container spacing={2} sx={{ paddingBottom: "200px" }}>
-      <Grid item xg={6} md={6} xs={12}>
+      <Grid
+        item
+        lg={6}
+        md={12}
+        xs={12}
+        sx={{ marginLeft: "auto", marginRight: "auto" }}
+      >
         <Stack direction="column" spacing={2}>
           <SubtitleTypography>
             Interface amigável para sua equipe trabalhar sem complicação
@@ -22,14 +28,16 @@ const FriendlyInterface = ({ SubtitleTypography, TextTypography }) => {
 
       <Grid
         item
-        xg={6}
-        md={6}
+        lg={6}
+        md={12}
         xs={12}
         sx={{
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
           height: "300px",
+          marginLeft: "auto",
+          marginRight: "auto",
         }}
       >
         <img src={image2} alt="" />

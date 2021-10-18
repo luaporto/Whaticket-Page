@@ -14,7 +14,7 @@ const Outro = ({ TextTypography, ContainedButton, ButtonTypography }) => {
             zIndex: "20",
             marginLeft: "auto",
             marginRight: "auto",
-            width: "450px",
+            maxWidth: "450px",
           }}
         >
           <Typography

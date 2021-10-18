@@ -15,7 +15,7 @@ import {
 const Cards = ({ CardSubtitleTypography, TextTypography, CardBox }) => {
   return (
     <Grid container spacing={10} sx={{ paddingBottom: "200px" }}>
-      <Grid item xg={4} md={4} xs={12}>
+      <Grid item md={4} xs={12}>
         <Box
           sx={{
             display: "flex",
@@ -36,7 +36,7 @@ const Cards = ({ CardSubtitleTypography, TextTypography, CardBox }) => {
           </TextTypography>
         </Stack>
       </Grid>
-      <Grid item xg={4} md={4} xs={12}>
+      <Grid item md={4} xs={12}>
         <Box
           sx={{
             display: "flex",
@@ -55,7 +55,7 @@ const Cards = ({ CardSubtitleTypography, TextTypography, CardBox }) => {
           </TextTypography>
         </Stack>
       </Grid>
-      <Grid item xg={4} md={4} xs={12}>
+      <Grid item md={4} xs={12}>
         <Box
           sx={{
             display: "flex",
@@ -78,8 +78,14 @@ const Cards = ({ CardSubtitleTypography, TextTypography, CardBox }) => {
         </Stack>
       </Grid>
 
-      <Grid item sx={{ zIndex: "30" }} xg={4} md={4} xs={12}>
-        <CardBox>
+      <Grid
+        item
+        sx={{ zIndex: "30", marginLeft: "auto", marginRight: "auto" }}
+        lg={4}
+        md={6}
+        xs={12}
+      >
+        <CardBox sx={{ zIndex: "30", marginLeft: "auto", marginRight: "auto" }}>
           <Stack
             sx={{ marginLeft: "auto", marginRight: "auto", width: "250px" }}
             direction="column"
@@ -100,8 +106,14 @@ const Cards = ({ CardSubtitleTypography, TextTypography, CardBox }) => {
           </Stack>
         </CardBox>
       </Grid>
-      <Grid item sx={{ zIndex: "30" }} xg={4} md={4} xs={12}>
-        <CardBox>
+      <Grid
+        item
+        sx={{ zIndex: "30", marginLeft: "auto", marginRight: "auto" }}
+        lg={4}
+        md={6}
+        xs={12}
+      >
+        <CardBox sx={{ zIndex: "30", marginLeft: "auto", marginRight: "auto" }}>
           <Stack
             sx={{ marginLeft: "auto", marginRight: "auto", width: "250px" }}
             direction="column"
@@ -120,8 +132,14 @@ const Cards = ({ CardSubtitleTypography, TextTypography, CardBox }) => {
           </Stack>
         </CardBox>
       </Grid>
-      <Grid item sx={{ zIndex: "30" }} xg={4} md={4} xs={12}>
-        <CardBox>
+      <Grid
+        item
+        sx={{ zIndex: "30", marginLeft: "auto", marginRight: "auto" }}
+        lg={4}
+        md={6}
+        xs={12}
+      >
+        <CardBox sx={{ zIndex: "30", marginLeft: "auto", marginRight: "auto" }}>
           <Stack
             sx={{ marginLeft: "auto", marginRight: "auto", width: "250px" }}
             direction="column"

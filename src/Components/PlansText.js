@@ -29,7 +29,7 @@ const PlansText = ({ TextTypography }) => {
             fontSize: "20px",
             fontWeight: "400",
             lineHeight: "27px",
-            width: "450px",
+            maxWidth: "450px",
             marginLeft: "auto",
             marginRight: "auto",
             paddingTop: "35px",

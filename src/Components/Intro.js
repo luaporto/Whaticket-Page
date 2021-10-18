@@ -11,14 +11,24 @@ const Intro = ({
   ButtonTypography,
 }) => {
   return (
-    <Grid container spacing={2} sx={{ paddingTop: "10px" }}>
-      <Grid item xg={6} md={6} xs={12}>
+    <Grid
+      container
+      spacing={2}
+      sx={{ paddingTop: "10px", paddingBottom: "100px" }}
+    >
+      <Grid
+        item
+        lg={6}
+        md={8}
+        xs={12}
+        sx={{ zIndex: "30", marginLeft: "auto", marginRight: "auto" }}
+      >
         <Box
           sx={{
             display: "flex",
             alignItems: "center",
             paddingRight: "78px",
-            width: "666px",
+            maxWidth: "666px",
 
             letterSpacing: "0.025em",
             color: "#302F2F",
@@ -44,7 +54,12 @@ const Intro = ({
           </Stack>
         </Box>
       </Grid>
-      <Grid item xg={6} md={6} xs={12}>
+      <Grid
+        item
+        md={6}
+        xs={12}
+        sx={{ zIndex: "30", marginLeft: "auto", marginRight: "auto" }}
+      >
         <Box
           sx={{
             display: "flex",
