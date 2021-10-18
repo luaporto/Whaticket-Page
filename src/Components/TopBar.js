@@ -33,7 +33,7 @@ const TopBar = ({ ContainedButton, ButtonTypography }) => {
               style={{
                 width: 75,
                 height: 75,
-                marginTop: "-15px",
+                marginTop: "-5px",
               }}
               src={icon}
               alt=""
